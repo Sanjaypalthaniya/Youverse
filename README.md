@@ -1,4 +1,4 @@
-# YOUVERSE - W07
+# YOUVERSE - W08
 
 Identity-first social website using Next.js 16 App Router, JavaScript/JSX, Bootstrap 5, SCSS and Lucide. Static-first, centralized mock data, lightweight session state.
 
@@ -26,7 +26,9 @@ W05 upgrades Projects discovery, four canonical detail pages, project creation p
 
 W06 adds Circle discovery, three community detail pages, five discussion pages, per-Circle discussion composers, join/leave confirmations, session replies/reactions, named member lists, guidelines and clearly labeled moderation previews. Joining a Circle never creates a Connect match or unlocks DMs.
 
-W07 upgrades `/connect` with Discover/Signals/Incoming/Matches, five intentions, explicit Dating opt-in and 18+ demo attestation, request/duplicate/quota validation, match celebration, block/unblock/unmatch, safety/preferences and plan comparison previews. Discovery starts paused; two clearly seeded incoming introductions let you explore free acceptance and mutual matches. Public profiles, Explore People and suggested makers use the same Connect state. `/messages` is only a consent-aware entry preview, with no chat or send control. W08 has not started.
+W07 upgrades `/connect` with Discover/Signals/Incoming/Matches, five intentions, explicit Dating opt-in and 18+ demo attestation, request/duplicate/quota validation, match celebration, block/unblock/unmatch, safety/preferences and plan comparison previews. Discovery starts paused; two clearly seeded incoming introductions let you explore free acceptance and mutual matches. Public profiles, Explore People and suggested makers use the same Connect state. W07 was safely recovered as `e7f5e9d`, with documentation checkpoint `baa0d7e`.
+
+W08 adds `/premium` with original pricing, comparison, quota usage and confirmed demo switching; a consent-gated `/messages` inbox and `/messages/[makerSlug]` conversations; ten Settings sections; Safety, Help, welcome/login refinement and demo onboarding. Only valid mutual matches expose a local message composer. No accessible conversations are seeded; accept an existing incoming Connect introduction first. Unmatch/block disables sending while existing local history can remain read-only. W09 has not started.
 
 Routes: /, /welcome, /login, /explore (supports ?q=...), /reels, /create, /connect, /messages, /notifications, /profile, /profile/edit, the three maker profiles above, /projects, /circles, /settings, /post/1 through /post/6. Invalid sections/posts/maker slugs return 404. Creator links resolve to the matching maker; Project, Circle and Connect workflows remain previews. `/profile` always shows the signed-in demo identity, including when old maker query parameters are present. Public URLs use the canonical slugs, not internal maker IDs.
 
@@ -57,6 +59,9 @@ Circle routes: `/circles/the-creative-corner`, `/circles/mindful-moments`, `/cir
 - data/connect.js: canonical Connect preferences, intentions, plans, request lifecycle, quotas, discovery and messaging-eligibility helpers; maker identities are references to the existing source.
 - components/Connect.jsx, components/ConnectUI.jsx, components/ConnectMessages.jsx, components/useConnect.js, app/connect.scss: W07 screens, shared consent controls and session adapter.
 - tests/connect.test.mjs: eight Connect/consent tests.
+- data/account.js, components/Premium.jsx, components/Messages.jsx, components/Account.jsx: W08 plan availability, message/settings helpers and screens, onboarding, safety and support.
+- app/premium/, app/messages/[makerSlug]/, app/settings/[section]/, app/onboarding/, app/help/, app/account.scss: W08 routes and styling.
+- tests/account.test.mjs: five W08 plan, consent, message, preference and onboarding tests.
 - docs/: canonical product plan, roadmap and phase verification reports.
 
 ## Demo boundaries and verification
@@ -73,7 +78,9 @@ Connect is a session demo, not real discovery or messaging. Sending creates only
 
 Free/Plus/Pro simulate 3/15/40 outgoing requests per India-time day, priced at INR 0/199/399 per month. Cancellation does not refund a sent request; changing the demo plan does not reset usage. Plan comparison creates no subscription or payment. Incoming acceptance stays free. All Connect state resets on refresh. Query-selected tabs (`/connect?tab=Incoming`, `Signals`, `Matches`, `Discover`) and maker selection (`/messages?maker=maker-0`) apply after client hydration; the server still renders a paused discovery/consent preview.
 
-Lint, thirty automated tests, production build and 66 HTTP checks pass; see docs/W07_VERIFICATION.md for exact evidence, file inventory, limits and Git checkpoint. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W08 has not started.
+W08 messages are outbound, session-only local records. No delivery, read receipt, automated reply, real-time service or attachment upload is simulated. Inbox “New match” means an unvisited valid demo match, not a received message. Old `/messages?maker=...` entry links navigate to canonical conversations after hydration; direct unmatched URLs are locked. Appearance has one root light/dark/system preference using the existing `youverse-theme` storage key. Only appearance persists; messages, plans, preferences and onboarding reset on refresh. Notification/visibility controls are previews, not delivery services or access enforcement. Support forms never send a note or claim delivery.
+
+Lint, thirty-five automated tests, production build and 86 HTTP checks pass; see docs/W08_VERIFICATION.md for Stage A recovery and Stage B evidence, file inventory, limits and Git checkpoints. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W09 has not started.
 
 ## Backup
 

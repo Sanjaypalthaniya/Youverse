@@ -1,6 +1,6 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02–W07 static UI is implemented; see the phase verification reports. W08 has not begun.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02–W08 static UI is implemented; see the phase verification reports. W09 has not begun.
 
 ## Status vocabulary
 
@@ -17,7 +17,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 | W05 | Static Projects & Collaboration | Static UI complete; session editing/stars/request demos; helper tests, build and HTTP verified; browser QA open |
 | W06 | Static Circles & Communities | Static UI complete; session membership/replies/reactions/draft previews; helper tests, build and HTTP verified; browser QA open |
 | W07 | Static Connect Discovery & Matching | Static UI complete; session discovery/requests/matches/safety/quota previews; helper tests, build and HTTP verified; browser QA open |
-| W08 | Static Premium, Messages & Settings | Not started; W01 shells only |
+| W08 | Static Premium, Messages & Settings | Static UI complete; original plan/quota previews, consent-gated session messaging, settings/safety/help/onboarding; tests/build/HTTP pass, browser QA open |
 | W09 | Social Frontend Functionality | Not started; like/bookmark/session filters are foundation demos |
 | W10 | Identity, Projects & Circles Functionality | Not started |
 | W11 | Connect, Premium & Messaging Functionality | Not started |
@@ -76,15 +76,15 @@ The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. Th
 | Mutual matches; Interested in You; unmatch | Static UI complete; valid incoming acceptance creates demo match, interest preview and unmatch; no service | W07/W11 |
 | Connect block/report; ON/OFF | Static UI complete; session block/unblock and pause preserve consent rules; report explanatory only | W07/W11 |
 | Dating opt-in with 18+ attestation; anti-spam introductions | Static UI complete; separate explicit choices and 20–500 character introductions; no backend enforcement | W07/W11 |
-| Private messaging after mutual acceptance only | Consent-aware entry preview and eligibility helper only; full static Messages remains W08, functional enforcement W11/later | W08/W11 |
-| Free plan: ₹0, 3 outgoing Connect requests/day | Not started | W08/W11 |
-| Plus: ₹199/month, 15 outgoing/day, advanced filters, expanded Interested in You, personalized introductions | Not started | W08/W11 |
-| Pro: ₹399/month, 40 outgoing/day, additional discovery preferences, priority introductions, Pro badge | Not started | W08/W11 |
+| Private messaging after mutual acceptance only | Static inbox/conversation UI complete; central eligibility checked before local send; direct unmatched routes locked, blocked/unmatched history read-only; no secure backend enforcement | W08/W11 |
+| Free plan: ₹0, 3 outgoing Connect requests/day | Static comparison and session quota preview complete; incoming acceptance/matched conversations free; no billing | W08/W11 |
+| Plus: ₹199/month, 15 outgoing/day, advanced filters, expanded Interested in You, personalized introductions | Static comparison/availability and session plan-switch preview complete; no subscription service | W08/W11 |
+| Pro: ₹399/month, 40 outgoing/day, additional discovery preferences, priority introductions, Pro badge | Static comparison/availability and session plan-switch preview complete; no subscription service | W08/W11 |
 | Welcome; demo login | Static UI complete (demo entry route) | W01 |
-| Onboarding | Not started | W08 |
-| Messages; account notifications | Messages remain W01 shell; notification static center complete in W03, no live account activity | W08/W11 |
-| Appearance | Theme toggle source complete; remaining controls not started | W01/W08 |
-| Privacy; safety; help; account settings | Not started (W01 explanatory shells only) | W08/W11 |
+| Onboarding | Static/session demo complete; partial Living Identity update and optional shared Connect participation; no authentication | W08 |
+| Messages; account notifications | Static inbox/canonical conversations complete with central consent gate and session-only outbound messages; eight preference controls; no live delivery | W08/W11 |
+| Appearance | Shared root light/dark/system preference and preview; existing storage key retained; browser QA open | W01/W08 |
+| Privacy; safety; help; account settings | Static sections and session notification/visibility preferences complete; shared Connect/Dating state, unblock confirmation, support preview; no real account/moderation service | W08/W11 |
 
 ## Non-negotiable product rules
 
@@ -133,3 +133,9 @@ Local demos: confirmed join/leave, synchronized membership/counts, reply append/
 ## W07 recovery checkpoint - 2026-11-01
 
 Recovered the interrupted W07 implementation without discarding work. Static Connect UI and session helpers are complete; lint, 30 tests, build and production route serving pass. Browser QA remains NOT RUN. Existing W01-W06 sources and state are preserved. This checkpoint precedes W08 work. See W07_VERIFICATION.md for implementation and consent limitations.
+
+## W08 checkpoint - 2026-11-01
+
+W07 recovery was committed and verified first (e7f5e9d; documentation baa0d7e). W08 static UI complete: original plans/pricing/comparison/usage and confirmed demo switching; consent-aware inbox and three canonical conversation routes; ten Settings sections; light/dark/system appearance; notification/visibility preferences; shared Connect/Dating/safety state and unblock confirmation; welcome/login/onboarding and Help/support preview.
+
+Local demos: valid-match-only message append, read-only history after unmatch/block, session preferences/onboarding/plan selection. Direct conversation URLs cannot create consent. No real authentication, subscription, delivery, moderation or backend. Lint, 35 tests, build and 86 production HTTP checks pass; browser/device/theme/modal/keyboard/hydration interactions NOT RUN. W09 and later complete functionality phases remain unstarted. See W08_VERIFICATION.md for both-stage evidence and limits. Prior phase checkpoint statements above are historical.
