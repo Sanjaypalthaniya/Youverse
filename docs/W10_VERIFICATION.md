@@ -97,4 +97,4 @@ W11 remains unstarted. Its handoff is the existing canonical Connect/canMessage,
 
 ## Git backup
 
-W10 implementation hash is recorded after the implementation commit, followed by a separate documentation checkpoint. No remote is configured; no push was attempted and no remote/history invented. Commits are local only. No reset, clean, force-push or history rewrite was used. Dependencies, build outputs, secrets and portable Git remain ignored.
+W10 implementation commit: **a067e02c11de00c78e3706de815494373f1fcde2** (W10: session identity curation, projects and Circle discussions). A separate documentation checkpoint records this immutable hash. Inspect both with .tools/git/cmd/git.exe log -2 --oneline. The checkpoint uses the explicit Codex author identity, as in earlier phases. No remote is configured; no push was attempted and no remote/history invented. Commits are local only. No reset, clean, force-push or history rewrite was used. Dependencies, build outputs, secrets and portable Git remain ignored.
