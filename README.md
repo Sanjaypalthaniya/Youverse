@@ -1,4 +1,4 @@
-# YOUVERSE - W10
+# YOUVERSE - W11
 
 Identity-first social website using Next.js 16 App Router, JavaScript/JSX, Bootstrap 5, SCSS and Lucide. Static-first, centralized mock data, lightweight session state.
 
@@ -89,9 +89,13 @@ Local IDs combine a monotonic sequence and tab scope. `/post/local-[sequence]-[s
 
 Project Updates require a valid owned/collaborating project. Circle-related posts require joined membership; neither action changes a roadmap, creates a discussion, consumes Connect quota or unlocks messages. Drafts and local records reset on refresh; only the pre-existing appearance preference persists. Publication activity describes only your own local action. Reports and Story replies remain clearly labeled previews.
 
-W10 adds ordered highlights, categorized milestones, featured work, local projects/discussions, owner goals/roadmap/field notes, filled-role collaboration and confirmed collaborator removal. Lint, 58 automated tests, production build and 98 HTTP checks pass; see [W10 verification](docs/W10_VERIFICATION.md) for exact scope, routes, limitations and Git checkpoint. Browser/device/visual/keyboard/hydration checks were NOT RUN because no browser-control tool is exposed. W11 has not started.
+W10 adds ordered highlights, categorized milestones, featured work, local projects/discussions, owner goals/roadmap/field notes, filled-role collaboration and confirmed collaborator removal. Lint, 58 automated tests, production build and 98 HTTP checks pass; see [W10 verification](docs/W10_VERIFICATION.md) for exact scope, routes, limitations and Git checkpoint. Browser/device/visual/keyboard/hydration checks were NOT RUN because no browser-control tool is exposed. W11 is implemented; W12 has not started.
 
 W10 adds data/communitySession.js, components/CommunityManagement.jsx, app/community-session.scss and tests/community-session.test.mjs around the existing provider and models. No new runtime dependency or persistence.
+
+W11 makes Plus/Pro skill/shared-interest filters, Pro location/available-maker preferences, editable introduction templates and expanded seeded-incoming summaries functional. Priority is local outgoing-list presentation only; Pro badges describe the current session plan. Original prices/caps and mutual-message consent remain unchanged. Settings, requests, usage and messages use the existing canonical root state. The inbox defaults to valid matches and separates read-only histories; read/unread is a personal local reminder, never another person's read receipt. Own Connect action activity uses consent-aware destinations. No backend, payment, delivery or new persistence.
+
+Current verification: lint, **73 tests**, production build and **98/98 HTTP checks** pass. Browser/device/keyboard/theme/hydration/interaction QA **NOT RUN**. See [W11 verification](docs/W11_VERIFICATION.md) for complete scope, limitations, file inventory, actual checks and Git checkpoint. W12 remains unstarted.
 
 ## Backup
 

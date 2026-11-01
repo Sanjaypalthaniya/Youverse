@@ -1,11 +1,11 @@
 'use client';
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useRef } from 'react';
 import { emptyDraft } from '../data/discovery';
 import { initialOwnProfile } from '../data/identity';
 import { initialProjectRequests } from '../data/projects';
 import { initialCircleMemberships } from '../data/circles';
 import { initialConnectState } from '../data/connect';
-import { initialAccountPreferences } from '../data/account';
+import { initialAccountPreferences,appendMessage } from '../data/account';
 import {initialSocialContent,toggleSocialValue} from '../data/sessionSocial';
 const SocialContext = createContext(null);
 export function SocialProvider({ children }) {
@@ -22,10 +22,16 @@ export function SocialProvider({ children }) {
  const [circleReplies, setCircleReplies] = useState({});
  const [circleReactions, setCircleReactions] = useState([]);
  const [circleDrafts, setCircleDrafts] = useState({});
- const [connectState, setConnectState] = useState(initialConnectState);
+ const [connectState, renderConnectState] = useState(initialConnectState);
+ const connectRef=useRef(initialConnectState);
+ function setConnectState(value){const next=typeof value==='function'?value(connectRef.current):value;connectRef.current=next;renderConnectState(next);}
+ function transactConnect(action){const result=action(connectRef.current);if(!result.error&&!Object.keys(result.errors||{}).length)setConnectState(result.state);return result;}
  const [accountPreferences,setAccountPreferences]=useState(initialAccountPreferences);
- const [messages,setMessages]=useState({});
- const [readConversations,setReadConversations]=useState([]);
+ const [messages,renderMessages]=useState({});
+ const messagesRef=useRef({});
+ function setMessages(value){const next=typeof value==='function'?value(messagesRef.current):value;messagesRef.current=next;renderMessages(next);}
+ function sendSessionMessage(makerId,message){const result=appendMessage(messagesRef.current,connectRef.current,makerId,message);if(!result.error)setMessages(result.messages);return result.error;}
+ const [readConversations,setReadConversations]=useState({});
  const [socialContent,setSocialContent]=useState(initialSocialContent);
  const [appearance,setAppearance]=useState('light');
  const [resolvedTheme,setResolvedTheme]=useState('light');
@@ -37,6 +43,6 @@ export function SocialProvider({ children }) {
  const [recentSearches, setRecentSearches] = useState([]);
  function rememberSearch(query) { const value = query.trim(); if (value) setRecentSearches(previous => [value, ...previous.filter(item => item.toLowerCase() !== value.toLowerCase())].slice(0, 5)); }
  function toggle(key, id) { setState(previous => toggleSocialValue(previous,key,id)); }
- return <SocialContext.Provider value={{ deletedProjects, setDeletedProjects, localDiscussions, setLocalDiscussions, state, toggle, draft, setDraft, readNotifications, setReadNotifications, recentSearches, setRecentSearches, rememberSearch, ownProfile, setOwnProfile, profileEditDraft, setProfileEditDraft, projectOverrides, setProjectOverrides, projectDrafts, setProjectDrafts, projectRequests, setProjectRequests, starredProjects, setStarredProjects, circleMemberships, setCircleMemberships, circleReplies, setCircleReplies, circleReactions, setCircleReactions, circleDrafts, setCircleDrafts, connectState, setConnectState,socialContent,setSocialContent,accountPreferences,setAccountPreferences,messages,setMessages,readConversations,setReadConversations,appearance,resolvedTheme,changeAppearance }}>{children}</SocialContext.Provider>;
+ return <SocialContext.Provider value={{ deletedProjects, setDeletedProjects, localDiscussions, setLocalDiscussions, state, toggle, draft, setDraft, readNotifications, setReadNotifications, recentSearches, setRecentSearches, rememberSearch, ownProfile, setOwnProfile, profileEditDraft, setProfileEditDraft, projectOverrides, setProjectOverrides, projectDrafts, setProjectDrafts, projectRequests, setProjectRequests, starredProjects, setStarredProjects, circleMemberships, setCircleMemberships, circleReplies, setCircleReplies, circleReactions, setCircleReactions, circleDrafts, setCircleDrafts, connectState, setConnectState,transactConnect,sendSessionMessage,socialContent,setSocialContent,accountPreferences,setAccountPreferences,messages,setMessages,readConversations,setReadConversations,appearance,resolvedTheme,changeAppearance }}>{children}</SocialContext.Provider>;
 }
 export const useSocial = () => useContext(SocialContext);

@@ -1,6 +1,6 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W02–W08 static UI and W09 session-based social functionality are implemented; see the phase verification reports. W10 session identity/project/Circle functionality is implemented; W11 has not begun. No backend, database, real authentication or payments are integrated.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W02–W08 static UI and W09 session-based social functionality are implemented; see the phase verification reports. W10 session identity/project/Circle functionality is implemented; W11 session Connect/Premium/Messages functionality is implemented; W12 has not begun. No backend, database, real authentication or payments are integrated.
 
 ## Status vocabulary
 
@@ -20,7 +20,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 | W08 | Static Premium, Messages & Settings | Static UI complete; original plan/quota previews, consent-gated session messaging, settings/safety/help/onboarding; tests/build/HTTP pass, browser QA open |
 | W09 | Social Frontend Functionality | Session publishing and shared social interactions complete; 46 tests/build/HTTP verified; browser QA open; no persistence/backend |
 | W10 | Identity, Projects & Circles Functionality | Local functionality implemented; 58 tests/build/98 HTTP checks pass; browser QA open; no persistence/backend |
-| W11 | Connect, Premium & Messaging Functionality | Not started |
+| W11 | Connect, Premium & Messaging Functionality | Session functionality implemented; 73 tests/build/98 HTTP checks pass; browser QA open; no production services |
 | W12 | Responsive QA, Accessibility & Final Web Verification | Not started |
 | W13 onward | Backend & Production Features | Not started |
 
@@ -151,3 +151,9 @@ Tested: lint, 46 automated tests, build, 90 production HTTP checks and diff chec
 Session identity curation now supports ordered highlights, categorized/confirmed personal milestones and featured projects/local reflections. Local project publication feeds shared discovery/profile/W09 selectors and safe local detail/edit routes. Owner goals, roadmap/milestones, field notes, role availability and accepted collaborator removal use immutable helpers. Joined Circles publish local discussions with safe routes, own edit/delete, local replies/reactions and sorting. Original fixtures and W01-W09 state remain shared.
 
 Lint, 58 tests, production build and 98 HTTP checks pass. Browser/device/keyboard/themes/hydration/interaction QA NOT RUN. No backend, persistence, production authorization or moderation. Connect/DM consent and original plan quotas remain separate. W11 is unstarted. See W10_VERIFICATION.md; earlier phase checkpoint statements are historical.
+
+## W11 checkpoint - 2026-11-01
+
+Canonical Connect now provides functional paid filters, editable personalized templates, expanded seeded-incoming summaries, local priority presentation and own Pro badges. Original opt-in/Dating/lifecycle/India-day quotas are retained and hardened. Root current-state commands protect request/message writes, with match-only inbox, read-only history, local read reminders and canonical consent-aware profile/notification links. No replies/interest/matches are fabricated.
+
+Lint, 73 tests, production build and 98 HTTP checks pass. Browser/device/theme/keyboard/modal/hydration/end-to-end QA NOT RUN. W12 is unstarted; its handoff is detailed in W11_VERIFICATION.md. No backend, durable storage, payments, real-time delivery or production authorization. Earlier checkpoint statements remain historical.
