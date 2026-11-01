@@ -67,4 +67,6 @@ Browser rendering, contrast, overflow at desktop/tablet/mobile widths, focus beh
 
 ## Git checkpoint
 
+W03 implementation commit: `cc87ea250439f1e0614820dda0e4a3056f73328c` (`W03: premium discovery, search, composer and notifications`). A follow-up documentation commit records this immutable implementation hash. The current checkpoint is available with `.tools/git/cmd/git.exe log -2 --oneline`.
+
 No remote is configured; no remote was invented and no push was attempted. Use portable Git under `.tools/git/cmd/git.exe` if Git is not on PATH. The sandbox cannot launch commands because its setup refresh fails, so shell reads/checks and Git operations used approved escalation; application code does not depend on elevated privileges.
