@@ -101,4 +101,4 @@ Normal social features, incoming acceptance and matched conversations stay free.
 
 ## Git backup
 
-W11 implementation hash is recorded after committing, followed by a separate documentation checkpoint. No remote is configured; no push was attempted and no remote invented. No force-push, reset or history rewrite. Only W11 source/tests/documentation are committed. Dependencies, build outputs, secrets and portable tools remain ignored. Commits are local only and use the explicit Codex author identity, consistent with earlier checkpoints.
+W11 implementation commit: **59bf826ea58ff6481f43cf73c3014a6546565566** (W11: functional Connect capabilities and consent-aware messaging). A separate documentation checkpoint records this immutable hash. Inspect both with .tools/git/cmd/git.exe log -2 --oneline. No remote is configured; no push was attempted and no remote invented. No force-push, reset or history rewrite. Only W11 source/tests/documentation are committed. Dependencies, build outputs, secrets and portable tools remain ignored. Commits are local only and use the explicit Codex author identity, consistent with earlier checkpoints.
