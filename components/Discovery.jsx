@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { ConnectPersonActions } from './ConnectUI';
 import { CircleCard } from './CircleUI';
 import { ProjectCard } from './ProjectUI';
 import { useProjects } from './useProjects';
@@ -21,7 +22,7 @@ export function DiscoveryCard({ item }) {
  if (item.circle) return <CircleCard circle={item.circle}/>;
  if (item.project) return <ProjectCard project={item.project}/>;
  if (item.post) return <PostCard post={item.post}/>;
- if (item.person) return <Card className="discovery-card"><div className="d-flex align-items-center gap-2"><Avatar {...item.person}/><FollowButton person={makers.findIndex(person => person.id === item.id)}/></div><Link href={item.href}><h3>{item.title}</h3><p className="maker-craft">{item.person.craft}</p></Link><p>{item.person.bio}</p><small>{sharedCuriosityText(ownProfile, item.person)}</small><div className="tag-row">{sharedInterests(ownProfile, item.person).map(tag => <Badge key={tag}>{tag}</Badge>)}</div><Link className="discovery-link" href={item.href}>View Living Identity <ArrowUpRight size={16}/></Link></Card>;
+ if (item.person) return <Card className="discovery-card"><div className="d-flex align-items-center gap-2"><Avatar {...item.person}/><FollowButton person={makers.findIndex(person => person.id === item.id)}/></div><Link href={item.href}><h3>{item.title}</h3><p className="maker-craft">{item.person.craft}</p></Link><p>{item.person.bio}</p><small>{sharedCuriosityText(ownProfile, item.person)}</small><div className="tag-row">{sharedInterests(ownProfile, item.person).map(tag => <Badge key={tag}>{tag}</Badge>)}</div><Link className="discovery-link" href={item.href}>View Living Identity <ArrowUpRight size={16}/></Link><ConnectPersonActions personId={item.person.id} compact/></Card>;
  return <Card className="discovery-card">{item.reel ? <Link href={item.href} aria-label={`Discover Reel: ${item.title}`}><Artwork variant={item.reel.art} title={item.title}/></Link> : <div className={`discovery-symbol ${item.project ? 'project-symbol' : ''}`}>{item.project ? <Layers size={32}/> : <Users size={32}/>}<span>{item.project ? 'IDEAS IN MOTION' : 'ROOM TO BELONG'}</span></div>}<Badge>{item.category}</Badge><Link href={item.href}><h3>{item.title}</h3></Link><p>{item.reel ? item.reel.caption : item.circle ? item.circle.description : item.project.text}</p>{item.circle && <small>{item.circle.members} curious people · {item.circle.topic}</small>}{item.project && <><Badge>{item.project.status}</Badge><p className="collaboration-label">{item.project.collaboration}</p></>}{item.reel && <small>Illustrated demo · {makers[item.reel.person].name}</small>}<Link className="discovery-link" href={item.href}>{item.reel ? 'Watch illustrated Reel' : item.circle ? 'Circle preview' : 'Project preview'} <ArrowUpRight size={16}/></Link></Card>;
 }
 function ExploreContent() {

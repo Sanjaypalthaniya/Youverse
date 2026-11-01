@@ -30,5 +30,5 @@ test('draft validation rejects whitespace, missing media, invalid Circle visibil
 test('discovery and notification IDs are unique and their links target existing surfaces', () => {
  assert.equal(new Set(discoveryItems.map(item => item.id)).size, discoveryItems.length);
  assert.equal(new Set(notifications.map(item => item.id)).size, notifications.length);
- for (const item of [...discoveryItems, ...notifications]) assert.match(item.href, /^\/(profile\/(ananyacreates|kabir\.builds|meerawanders)|post\/[1-6](#comments)?|reels#reel-\d|circles(\/[a-z-]+)?(\/discussion\/[a-z-]+)?|projects(\/[a-z-]+)?(#activity)?|connect)$/);
+ for (const item of [...discoveryItems, ...notifications]) assert.match(item.href, /^\/(profile\/(ananyacreates|kabir\.builds|meerawanders)|post\/[1-6](#comments)?|reels#reel-\d|circles(\/[a-z-]+)?(\/discussion\/[a-z-]+)?|projects(\/[a-z-]+)?(#activity)?|connect(\?tab=(Incoming|Matches))?)$/);
 });

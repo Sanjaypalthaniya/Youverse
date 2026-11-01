@@ -1,6 +1,6 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02–W06 static UI is implemented; see the phase verification reports. W07 has not begun.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02–W07 static UI is implemented; see the phase verification reports. W08 has not begun.
 
 ## Status vocabulary
 
@@ -16,7 +16,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 | W04 | Static Living Identity & Profiles | Static UI complete; session editor and existing follow-state integration; data/validation/link tests and build/HTTP verified; browser QA open |
 | W05 | Static Projects & Collaboration | Static UI complete; session editing/stars/request demos; helper tests, build and HTTP verified; browser QA open |
 | W06 | Static Circles & Communities | Static UI complete; session membership/replies/reactions/draft previews; helper tests, build and HTTP verified; browser QA open |
-| W07 | Static Connect Discovery & Matching | Not started; W01 shell only |
+| W07 | Static Connect Discovery & Matching | Static UI complete; session discovery/requests/matches/safety/quota previews; helper tests, build and HTTP verified; browser QA open |
 | W08 | Static Premium, Messages & Settings | Not started; W01 shells only |
 | W09 | Social Frontend Functionality | Not started; like/bookmark/session filters are foundation demos |
 | W10 | Identity, Projects & Circles Functionality | Not started |
@@ -70,13 +70,13 @@ The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. Th
 | Circle discovery | Static UI complete; query/category/curiosity filters, My Circles, recommendations and curated discussions | W06/W10 |
 | Circle details; membership; member lists | Static UI complete; three canonical routes, session join/leave, count/profile consistency and named demo member lists | W06/W10 |
 | Discussions; replies; reactions; guidelines; topic discovery | Static UI complete; five discussion routes, per-Circle validated composer preview, session replies/reactions, guidelines and moderation explanations; no persistent publishing or enforcement | W06/W10 |
-| Connect friendship; dating (18+); collaboration; mentorship; networking | Not started (W01 intention copy/sample people) | W07/W11 |
-| Optional discovery; shared curiosities; intent filters; discovery preferences | Not started | W07/W11 |
-| Incoming and outgoing requests; accept/decline/cancel | Not started | W07/W11 |
-| Mutual matches; Interested in You; unmatch | Not started | W07/W11 |
-| Connect block/report; ON/OFF | Not started | W07/W11 |
-| Dating opt-in with 18+ attestation; anti-spam introductions | Not started | W07/W11 |
-| Private messaging after mutual acceptance only | Not started (W01 inbox explanation) | W08/W11 |
+| Connect friendship; dating (18+); collaboration; mentorship; networking | Static UI complete; shared intentions, explicit Dating opt-in/attestation demo; no production age check | W07/W11 |
+| Optional discovery; shared curiosities; intent filters; discovery preferences | Static UI complete; paused by default, genuine shared-interest filtering and session preferences | W07/W11 |
+| Incoming and outgoing requests; accept/decline/cancel | Static UI complete; validated session lifecycle, duplicate prevention and outgoing quota accounting | W07/W11 |
+| Mutual matches; Interested in You; unmatch | Static UI complete; valid incoming acceptance creates demo match, interest preview and unmatch; no service | W07/W11 |
+| Connect block/report; ON/OFF | Static UI complete; session block/unblock and pause preserve consent rules; report explanatory only | W07/W11 |
+| Dating opt-in with 18+ attestation; anti-spam introductions | Static UI complete; separate explicit choices and 20–500 character introductions; no backend enforcement | W07/W11 |
+| Private messaging after mutual acceptance only | Consent-aware entry preview and eligibility helper only; full static Messages remains W08, functional enforcement W11/later | W08/W11 |
 | Free plan: ₹0, 3 outgoing Connect requests/day | Not started | W08/W11 |
 | Plus: ₹199/month, 15 outgoing/day, advanced filters, expanded Interested in You, personalized introductions | Not started | W08/W11 |
 | Pro: ₹399/month, 40 outgoing/day, additional discovery preferences, priority introductions, Pro badge | Not started | W08/W11 |
@@ -129,3 +129,7 @@ Local demos: session project drafts/owned overrides/stars, validated request pre
 Static UI complete: Circles discovery with query/category/curiosity/My Circles filters, featured/suggested communities and curated trending discussions; three canonical Circle details; five discussion routes; three membership-aware composer routes; members, guidelines, creator/moderator links and labeled safety previews. Shared Circle references are integrated with profiles, Explore, Feed, project interests, notifications and navigation.
 
 Local demos: confirmed join/leave, synchronized membership/counts, reply append/validation, appreciation toggles, discussion draft/preview/validation and publish feedback. No persistent discussion publishing, server access enforcement, real moderation, Connect match or DM access. Backend integrated: No. Twenty-two tests, lint, production build and 58 HTTP checks pass. Browser/device/theme/keyboard/modal/interaction checks NOT RUN. W07 and subsequent complete product phases remain unstarted; W10 retains persistent Circle functionality and later phases retain production services. See W06_VERIFICATION.md. Prior checkpoint statements above are historical handoffs.
+
+## W07 recovery checkpoint - 2026-11-01
+
+Recovered the interrupted W07 implementation without discarding work. Static Connect UI and session helpers are complete; lint, 30 tests, build and production route serving pass. Browser QA remains NOT RUN. Existing W01-W06 sources and state are preserved. This checkpoint precedes W08 work. See W07_VERIFICATION.md for implementation and consent limitations.

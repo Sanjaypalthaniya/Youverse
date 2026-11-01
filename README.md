@@ -1,4 +1,4 @@
-# YOUVERSE - W06
+# YOUVERSE - W07
 
 Identity-first social website using Next.js 16 App Router, JavaScript/JSX, Bootstrap 5, SCSS and Lucide. Static-first, centralized mock data, lightweight session state.
 
@@ -24,7 +24,9 @@ W04 adds a Living Identity dashboard at `/profile`, session-only profile editing
 
 W05 upgrades Projects discovery, four canonical detail pages, project creation previews, an owned-project session editor, milestone progress, field notes, stars and collaboration introductions. The three original projects retain their owners. A fourth, Small Beginnings, is an Aarav-owned demo for editing and incoming accept/decline workflows. Accepting project collaboration never creates a Connect match or unlocks private DMs.
 
-W06 adds Circle discovery, three community detail pages, five discussion pages, per-Circle discussion composers, join/leave confirmations, session replies/reactions, named member lists, guidelines and clearly labeled moderation previews. Joining a Circle never creates a Connect match or unlocks DMs. W07 has not started.
+W06 adds Circle discovery, three community detail pages, five discussion pages, per-Circle discussion composers, join/leave confirmations, session replies/reactions, named member lists, guidelines and clearly labeled moderation previews. Joining a Circle never creates a Connect match or unlocks DMs.
+
+W07 upgrades `/connect` with Discover/Signals/Incoming/Matches, five intentions, explicit Dating opt-in and 18+ demo attestation, request/duplicate/quota validation, match celebration, block/unblock/unmatch, safety/preferences and plan comparison previews. Discovery starts paused; two clearly seeded incoming introductions let you explore free acceptance and mutual matches. Public profiles, Explore People and suggested makers use the same Connect state. `/messages` is only a consent-aware entry preview, with no chat or send control. W08 has not started.
 
 Routes: /, /welcome, /login, /explore (supports ?q=...), /reels, /create, /connect, /messages, /notifications, /profile, /profile/edit, the three maker profiles above, /projects, /circles, /settings, /post/1 through /post/6. Invalid sections/posts/maker slugs return 404. Creator links resolve to the matching maker; Project, Circle and Connect workflows remain previews. `/profile` always shows the signed-in demo identity, including when old maker query parameters are present. Public URLs use the canonical slugs, not internal maker IDs.
 
@@ -52,6 +54,9 @@ Circle routes: `/circles/the-creative-corner`, `/circles/mindful-moments`, `/cir
 - data/circles.js: canonical Circle/discussion/reply fixtures, membership, validation, filtering and interaction helpers.
 - components/Circles.jsx, components/CircleUI.jsx, components/CircleDiscussion.jsx, components/CircleComposer.jsx, components/useCircles.js: W06 screens, shared visuals and root-session adapter.
 - app/circles/, app/circles.scss, tests/circles.test.mjs: Circle routes, responsive styling and seven Circle tests.
+- data/connect.js: canonical Connect preferences, intentions, plans, request lifecycle, quotas, discovery and messaging-eligibility helpers; maker identities are references to the existing source.
+- components/Connect.jsx, components/ConnectUI.jsx, components/ConnectMessages.jsx, components/useConnect.js, app/connect.scss: W07 screens, shared consent controls and session adapter.
+- tests/connect.test.mjs: eight Connect/consent tests.
 - docs/: canonical product plan, roadmap and phase verification reports.
 
 ## Demo boundaries and verification
@@ -64,7 +69,11 @@ Project editing updates the existing owned fixture across project/profile/Explor
 
 Circle membership, member-count deltas, replies, appreciation and discussion drafts last for the current tab session and reset on refresh. My Circles, profile memberships and member lists use the same state. Discussion creation validates a publishing preview and keeps a draft without adding a real discussion or URL. Replies are appended locally to existing discussions. Joining is a UI requirement for composer/reply/reaction controls, not server-enforced access control. Member totals are fixture aggregates; named member lists are labeled samples. Reports and blocks are explanatory previews only.
 
-Lint, twenty-two automated tests, production build and 58 HTTP checks pass; see docs/W06_VERIFICATION.md for exact evidence, file inventory, limits and Git checkpoint. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W07 has not started.
+Connect is a session demo, not real discovery or messaging. Sending creates only outgoing-pending state. Only accepting a valid seeded incoming Connect request creates a mutual match. Blocking/unmatching revokes conversation eligibility; unblocking does not restore a match. Follow, Circle membership, project acceptance and paid-plan simulation never grant DM eligibility. Connect OFF preserves existing requests and matches. Dating requires selecting Dating plus explicit opt-in and a separate 18+ demo attestation; no real age verification exists.
+
+Free/Plus/Pro simulate 3/15/40 outgoing requests per India-time day, priced at INR 0/199/399 per month. Cancellation does not refund a sent request; changing the demo plan does not reset usage. Plan comparison creates no subscription or payment. Incoming acceptance stays free. All Connect state resets on refresh. Query-selected tabs (`/connect?tab=Incoming`, `Signals`, `Matches`, `Discover`) and maker selection (`/messages?maker=maker-0`) apply after client hydration; the server still renders a paused discovery/consent preview.
+
+Lint, thirty automated tests, production build and 66 HTTP checks pass; see docs/W07_VERIFICATION.md for exact evidence, file inventory, limits and Git checkpoint. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W08 has not started.
 
 ## Backup
 
