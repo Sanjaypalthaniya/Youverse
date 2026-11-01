@@ -81,4 +81,6 @@ W05–W13 have not started. W10 retains full identity persistence/functionality;
 
 ## Git backup
 
-No Git remote is configured. No remote was invented or force-pushed. The W04 implementation commit is recorded after creation, followed by a documentation checkpoint. Portable Git remains in ignored `.tools/git`. Commands required approved escalation because sandbox process startup failed with a setup-refresh error; application execution does not require elevated privileges.
+W04 implementation commit: `35c07bb7137d6c706fe90ce474dfe474f578fb23` (`W04: living identity, session editing and public maker profiles`). A follow-up documentation commit records this implementation hash. Inspect both with `.tools/git/cmd/git.exe log -2 --oneline`.
+
+No Git remote is configured. No remote was invented or force-pushed. Portable Git remains in ignored `.tools/git`. Commands required approved escalation because sandbox process startup failed with a setup-refresh error; application execution does not require elevated privileges.
