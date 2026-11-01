@@ -1,6 +1,6 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02 static UI is implemented; see the W02 verification report. W03 static UI is implemented; W04 has not begun.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02–W04 static UI is implemented; see the phase verification reports. W05 has not begun.
 
 ## Status vocabulary
 
@@ -13,7 +13,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 | W01 | Foundation, Design System, Navigation | Foundation preserved; lint/build/HTTP serving verified during W02; browser QA open |
 | W02 | Static Feed, Stories, Reels | Static UI complete; session demos implemented; lint/build/HTTP verified; browser QA open |
 | W03 | Static Explore, Search, Create, Notifications | Static UI complete; local filtering/composer/read-state demos; automated checks verified, browser QA open |
-| W04 | Static Living Identity & Profiles | Not started; W01 shell only |
+| W04 | Static Living Identity & Profiles | Static UI complete; session editor and existing follow-state integration; data/validation/link tests and build/HTTP verified; browser QA open |
 | W05 | Static Projects & Collaboration | Not started; W01 shell only |
 | W06 | Static Circles & Communities | Not started; W01 shell only |
 | W07 | Static Connect Discovery & Matching | Not started; W01 shell only |
@@ -56,13 +56,13 @@ The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. Th
 | Likes; comments; bookmarks; sharing | Session likes/bookmarks/comments and clipboard links; persistence not started | W09 |
 | Follow/unfollow | Session demo; persistence not started | W09 |
 | Notifications | Static UI complete; local category/read-state demos; no live delivery | W03/W09 |
-| Public profiles | Not started (shared W01 profile preview) | W04/W10 |
+| Public profiles | Static UI complete; three canonical maker routes, per-maker content, explainable shared interests, existing follow state, gated Message explanation | W04/W10 |
 | Reporting; hiding; blocking | Hide/undo and report menu demo; no moderation service or blocking | W09 |
-| Profile overview | Not started (W01 identity summary preview) | W04/W10 |
-| Profile editing; bio and craft | Not started | W04/W10 |
-| Skills; interests and curiosities; intentions | Not started (sample tags/intention only) | W04/W10 |
-| Identity highlights; milestones; personal growth journey | Not started (sample milestone only) | W04/W10 |
-| Profile reflections; projects; public creator profiles | Not started (sample reflection only) | W04/W10 |
+| Profile overview | Static UI complete; personal dashboard, structured identity, completion, memberships, demo people lists | W04/W10 |
+| Profile editing; bio and craft | Static UI complete; validated session save/cancel/preview, unsaved-change warnings; no persistence | W04/W10 |
+| Skills; interests and curiosities; intentions | Static UI complete; editable chips, true shared-interest intersections; validation unit-tested | W04/W10 |
+| Identity highlights; milestones; personal growth journey | Static UI complete; session-editable highlights/milestones and growth timeline | W04/W10 |
+| Profile reflections; projects; public creator profiles | Static UI complete; existing maker posts/project references, own reflection empty state; Project workflows remain W05 | W04/W10 |
 | Project discovery | Not started (W01 sample collection) | W05/W10 |
 | Project creation and editing; details; status | Not started | W05/W10 |
 | Project roadmap and milestones; progress field notes | Not started | W05/W10 |
@@ -111,3 +111,9 @@ Local demos only: following filters, like/save/follow/hide, story viewed status,
 Static UI complete: Explore hero and discovery grid, six categories, query suggestions/recent searches, trending filters, maker/post/Reel/Circle/project discovery cards; seven-format Create composer with illustrated media, tags/Circle/visibility, preview, draft status, validation and demo success; grouped Notifications with five categories, avatars/icons, individual/all-read actions, settings entry and empty states. Shared mock metadata reuses W02 identities/content and existing projects/Circles.
 
 Local functionality complete only as demos: multi-word/category/interest filtering, session draft/history/read state, preview and validation. Automated tests verify search, draft validation and data links. Lint/build and HTTP route checks pass. Browser/device/keyboard/interaction QA NOT RUN. No uploads, persistent publishing, notification service or backend integrated. See W03_VERIFICATION.md for exact checks, file inventory, limits and checkpoint. W04 through W13 and Flutter remain unstarted.
+
+## W04 checkpoint - 2026-11-01
+
+Static UI complete: personal Living Identity dashboard, three canonical public maker profiles, four identity tabs, skill/interest/intention/highlight sections, personal timeline, project/Circle references, followers/following lists, profile sharing and editor. Local demos: session profile save/preview/cancel, chip and milestone editing, completion, unsaved-change notices and existing Follow integration. Shared-interest explanations use exact stated-interest intersections and respond to saved session edits. Connect/Message/safety actions explain their future behavior without creating relationships or messages.
+
+Tested: profile data/validation/slug lookup/canonical links/shared-interest helpers and existing W03 tests; lint, production build and route serving. Browser/device/theme/keyboard/interactive editor checks NOT RUN. Backend integrated: No. Persistent identity functionality remains W10 and later backend integration. W05 and all subsequent phases remain unstarted. See W04_VERIFICATION.md. Historical W03 checkpoint statements above describe their original handoff, not current W04 status.

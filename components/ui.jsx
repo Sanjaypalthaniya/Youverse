@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 import { useEffect, useRef } from 'react';
 export function Button({ children, variant = 'primary', className = '', ...props }) { return <button className={`yv-button ${variant} ${className}`} {...props}>{children}</button>; }
 export function Card({ children, className = '', ...props }) { return <section className={`yv-card ${className}`} {...props}>{children}</section>; }
-export function Avatar({ name, size = '', color = 'violet' }) { return <span className={`avatar ${size} ${color}`} aria-label={name}>{name.split(' ').map(n => n[0]).slice(0,2).join('')}</span>; }
+export function Avatar({ name, size = '', color = 'violet', avatarStyle = 'initials' }) { return <span className={`avatar ${size} ${color} avatar-${avatarStyle}`} aria-label={name}>{name.split(' ').map(n => n[0]).slice(0,2).join('')}</span>; }
 export function Badge({ children }) { return <span className="yv-badge">{children}</span>; }
 export function Input({ label, ...props }) { return <label className="field">{label}<input {...props} /></label>; }
 export function Tabs({ items, value, onChange }) { return <div className="tabs" role="tablist">{items.map(item => <button key={item} role="tab" aria-selected={value === item} onClick={() => onChange(item)}>{item}</button>)}</div>; }
