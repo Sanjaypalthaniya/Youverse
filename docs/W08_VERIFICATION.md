@@ -97,4 +97,6 @@ Git commits are **local only**: no remote is configured, no push succeeded or wa
 .tools/git/cmd/git.exe push -u origin master
 ```
 
-Replace the placeholders with the real private repository. Do not add a second origin if one has since been configured. The W08 implementation hash is recorded after commit in a separate documentation checkpoint.
+Replace the placeholders with the real private repository. Do not add a second origin if one has since been configured.
+
+W08 implementation commit: **`95d177fdc57b8c2ce01d23d769549c446966f445`** (`W08: premium plans, consent-gated messages and account experiences`). A separate documentation checkpoint records this immutable hash. The W07 recovery commits remain earlier in history, without rewriting. Inspect with `.tools/git/cmd/git.exe log -4 --oneline`.
