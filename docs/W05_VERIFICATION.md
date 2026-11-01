@@ -85,4 +85,6 @@ Follow is free and separate from Connect. Private DMs require mutual Connect acc
 
 ## Git backup
 
-No remote is configured. No remote was invented, no push was attempted and no force-push occurred. The implementation hash is recorded after committing W05, followed by a documentation checkpoint. Portable Git remains under ignored `.tools/git`; shell commands needed approved escalation because sandbox process startup still fails with a setup-refresh error.
+W05 implementation commit: `16f9fbb14a815c1649df632896b13ffcc2027e83` (`W05: premium projects and session collaboration previews`). A follow-up documentation commit records this immutable implementation hash. Inspect both with `.tools/git/cmd/git.exe log -2 --oneline`.
+
+No remote is configured. No remote was invented, no push was attempted and no force-push occurred. Portable Git remains under ignored `.tools/git`; shell commands needed approved escalation because sandbox process startup still fails with a setup-refresh error.
