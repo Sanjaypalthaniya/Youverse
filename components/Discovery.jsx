@@ -33,7 +33,7 @@ function ExploreContent() {
  const [category, setCategory] = useState('All'); const [interest, setInterest] = useState(''); const [suggestions, setSuggestions] = useState(false);
  const { recentSearches, setRecentSearches, rememberSearch } = useSocial();
  const { projects } = useProjects();
- const {discovery:allItems}=useSocialContent();
+ const {discovery:baseItems}=useSocialContent();const allItems=searchDiscovery({projects,items:baseItems});
  const results = searchDiscovery({ query, category, interest, projects, items:allItems });
  const isFiltering = !!query.trim() || !!interest || category !== 'All';
  function search(value) { setQuery(value); rememberSearch(value); setSuggestions(false); router.replace(value.trim() ? `/explore?q=${encodeURIComponent(value.trim())}` : '/explore', { scroll: false }); }

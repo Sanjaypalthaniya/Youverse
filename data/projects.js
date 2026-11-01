@@ -28,6 +28,7 @@ export function filterProjects(projects, { query = '', category = 'All', status 
 export const emptyProjectDraft = { title: '', text: '', mission: '', category: projectCategories[0], status: 'Exploring', skills: [], tags: [], collaborationOpen: true, roles: [], milestones: [], cover: 'violet', visibility: 'Public', ownerId: 'self' };
 export function validateProject(project) {
  const errors = {};
+ if((project.goals||[]).length>10||(project.goals||[]).some(goal=>!goal.trim()||goal.length>120)||new Set((project.goals||[]).map(goal=>goal.trim().toLowerCase())).size!==(project.goals||[]).length)errors.goals='Use up to 10 unique goals of 1-120 characters.';
  for (const field of ['title', 'text', 'mission']) if (!project[field].trim() || project[field].length > projectLimits[field]) errors[field] = `Add ${field === 'text' ? 'a short description' : field === 'title' ? 'a project name' : 'a mission'} within ${projectLimits[field]} characters.`;
  if (!projectCategories.includes(project.category)) errors.category = 'Choose an available category.';
  if (!projectStatuses.includes(project.status)) errors.status = 'Choose a project status.';
@@ -39,7 +40,7 @@ export function validateProject(project) {
  if (!['violet', 'coral', 'green'].includes(project.cover)) errors.cover = 'Choose an illustrated cover.';
  return errors;
 }
-export function normalizeProject(project) { return { ...project, title: project.title.trim(), text: project.text.trim(), mission: project.mission.trim(), skills: project.skills.map(item => item.trim()), tags: project.tags.map(item => item.trim()), roles: project.roles.map(role => ({ ...role, title: role.title.trim(), description: role.description.trim() })), milestones: project.milestones.map(item => ({ ...item, title: item.title.trim() })), roadmap: project.milestones.map(item => ({ ...item })), topic: project.tags[0]?.trim(), color: project.cover, collaboration: project.collaborationOpen ? 'Open to collaborators' : 'Collaboration closed' }; }
+export function normalizeProject(project) { return { ...project, goals:(project.goals||[]).map(goal=>goal.trim()), title: project.title.trim(), text: project.text.trim(), mission: project.mission.trim(), skills: project.skills.map(item => item.trim()), tags: project.tags.map(item => item.trim()), roles: project.roles.map(role => ({ ...role, title: role.title.trim(), description: role.description.trim() })), milestones: project.milestones.map(item => ({ ...item, title: item.title.trim() })), roadmap: project.milestones.map(item => ({ ...item })), topic: project.tags[0]?.trim(), color: project.cover, collaboration: project.collaborationOpen ? 'Open to collaborators' : 'Collaboration closed' }; }
 export const initialProjectRequests = [
  { id: 'incoming-ananya', projectId: 'project-3', makerId: 'maker-0', roleId: 'prompt-writer', introduction: 'I would love to turn my everyday sketchbook practice into a few visual prompts for people finding their way back to making.', status: 'pending' },
  { id: 'incoming-meera', projectId: 'project-3', makerId: 'maker-2', roleId: 'accessibility-reviewer', introduction: 'Hosting gentle walks taught me to make invitations feel welcoming. I would love to review the language and pacing of your prompts.', status: 'pending' }
@@ -54,6 +55,7 @@ export function validateCollaboration(project, request) {
 }
 export function submitProjectRequest(requests, project, request) {
  const errors = validateCollaboration(project, request);
+ if(requests.some(item=>item.projectId===project?.id&&item.roleId===request.roleId&&item.status==='accepted'))errors.role='This collaboration role is currently filled.';
  if (requests.some(item => item.projectId === project?.id && item.makerId === request.makerId && ['pending','accepted'].includes(item.status))) errors.duplicate = 'You already have a pending or accepted request for this project.';
  if (requests.some(item => item.id === request.id)) errors.duplicate = 'This request already exists.';
  if (Object.keys(errors).length) return { requests, errors };
@@ -61,8 +63,10 @@ export function submitProjectRequest(requests, project, request) {
 }
 export function transitionProjectRequest(requests, project, requestId, action, actorId) {
  const request = requests.find(item => item.id === requestId);
+ if(action==='removed'&&request?.status==='accepted'&&project?.id===request.projectId&&project.ownerId===actorId)return{requests:requests.map(item=>item.id===requestId?{...item,status:'removed'}:item),error:''};
  const allowed = request && project && request.projectId === project.id && request.status === 'pending' && ((action === 'cancelled' && request.makerId === actorId) || (['accepted','declined'].includes(action) && project.ownerId === actorId));
  if (!allowed) return { requests, error: 'Only a pending request can be changed by its requester or project owner.' };
  if (action === 'accepted' && (!project.collaborationOpen || ['Paused','Completed'].includes(project.status) || !project.roles.some(role => role.id === request.roleId))) return { requests, error: 'This role is no longer accepting collaborators. Reopen the role or decline the request.' };
+ if(action==='accepted'&&requests.some(item=>item.id!==requestId&&item.projectId===project.id&&item.roleId===request.roleId&&item.status==='accepted'))return{requests,error:'This role is already filled.'};
  return { requests: requests.map(item => item.id === requestId ? { ...item, status: action } : item), error: '' };
 }

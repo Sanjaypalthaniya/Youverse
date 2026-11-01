@@ -17,7 +17,7 @@ export const discussions = [
 export const circleHref = circle => `/circles/${circle.slug}`;
 export const getCircle = identifier => circleFixtures.find(circle => circle.id === identifier || circle.slug === identifier);
 export const getCircleBySlug = slug => circleFixtures.find(circle => circle.slug === slug);
-export const getDiscussion = (circleId, discussionId) => discussions.find(discussion => discussion.circleId === circleId && discussion.id === discussionId);
+export const getDiscussion = (circleId, discussionId, records=discussions) => records.find(discussion => discussion.circleId === circleId && discussion.id === discussionId);
 export const discussionHref = discussion => `${circleHref(getCircle(discussion.circleId))}/discussion/${discussion.id}`;
 export const initialCircleMemberships = [...initialOwnProfile.circleIds];
 export function transitionMembership(memberships, circleId, action) {
@@ -40,14 +40,14 @@ export function validateDiscussion(draft, circleId, memberships) {
  return errors;
 }
 export function validateReply(text, circleId, memberships) { if (!getCircle(circleId) || !memberships.includes(circleId)) return 'Join this Circle before replying.'; if (!text.trim() || text.length > 1000) return 'Write a reply of 1–1,000 characters.'; return ''; }
-export function appendCircleReply(replies, discussionId, reply, memberships) {
- const discussion = discussions.find(item => item.id === discussionId);
+export function appendCircleReply(replies, discussionId, reply, memberships, records=discussions) {
+ const discussion = records.find(item => item.id === discussionId);
  const error = discussion ? validateReply(reply.text, discussion.circleId, memberships) : 'This discussion does not exist.';
  if (error || reply.authorId !== 'self' || !reply.id || [...discussions.flatMap(item=>item.replies),...Object.values(replies).flat()].some(item => item.id === reply.id)) return { replies, error: error || 'Use the signed-in demo identity and a unique reply ID.' };
  return { replies: { ...replies, [discussionId]: [...(replies[discussionId] || []), { ...reply, text: reply.text.trim() }] }, error: '' };
 }
-export function toggleCircleReaction(reactions, discussionId, memberships) {
- const discussion = discussions.find(item => item.id === discussionId);
+export function toggleCircleReaction(reactions, discussionId, memberships, records=discussions) {
+ const discussion = records.find(item => item.id === discussionId);
  if (!discussion || !memberships.includes(discussion.circleId)) return { reactions, error: 'Join this Circle before reacting.' };
  return { reactions: reactions.includes(discussionId) ? reactions.filter(id => id !== discussionId) : [...reactions, discussionId], error: '' };
 }

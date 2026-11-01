@@ -1,6 +1,6 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W02–W08 static UI and W09 session-based social functionality are implemented; see the phase verification reports. W10 has not begun. No backend, database, real authentication or payments are integrated.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W02–W08 static UI and W09 session-based social functionality are implemented; see the phase verification reports. W10 session identity/project/Circle functionality is implemented; W11 has not begun. No backend, database, real authentication or payments are integrated.
 
 ## Status vocabulary
 
@@ -19,7 +19,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 | W07 | Static Connect Discovery & Matching | Static UI complete; session discovery/requests/matches/safety/quota previews; helper tests, build and HTTP verified; browser QA open |
 | W08 | Static Premium, Messages & Settings | Static UI complete; original plan/quota previews, consent-gated session messaging, settings/safety/help/onboarding; tests/build/HTTP pass, browser QA open |
 | W09 | Social Frontend Functionality | Session publishing and shared social interactions complete; 46 tests/build/HTTP verified; browser QA open; no persistence/backend |
-| W10 | Identity, Projects & Circles Functionality | Not started |
+| W10 | Identity, Projects & Circles Functionality | Local functionality implemented; 58 tests/build/98 HTTP checks pass; browser QA open; no persistence/backend |
 | W11 | Connect, Premium & Messaging Functionality | Not started |
 | W12 | Responsive QA, Accessibility & Final Web Verification | Not started |
 | W13 onward | Backend & Production Features | Not started |
@@ -145,3 +145,9 @@ Local demos: valid-match-only message append, read-only history after unmatch/bl
 Session functionality complete: seven-format preview/confirmed publication, Feed/Stories/Reels insertion, scoped stable local IDs and unavailable-session detail state, shared likes/comments/bookmarks, actual Following/Saved selectors, hide/undo, own text edit/delete, local profile/discovery/activity integration and scoped keyboard media navigation. No remote media or server publication. Validation respects current project participation and Circle membership without mutating their workflows.
 
 Tested: lint, 46 automated tests, build, 90 production HTTP checks and diff checks. Browser/device/theme/hydration/modal/interaction QA NOT RUN. No backend integrated. Existing consent, plans, messages, identity, project/Circle and preference state is retained. W10 and later complete phases remain unstarted. See W09_VERIFICATION.md; previous phase checkpoint statements are historical.
+
+## W10 checkpoint - 2026-11-01
+
+Session identity curation now supports ordered highlights, categorized/confirmed personal milestones and featured projects/local reflections. Local project publication feeds shared discovery/profile/W09 selectors and safe local detail/edit routes. Owner goals, roadmap/milestones, field notes, role availability and accepted collaborator removal use immutable helpers. Joined Circles publish local discussions with safe routes, own edit/delete, local replies/reactions and sorting. Original fixtures and W01-W09 state remain shared.
+
+Lint, 58 tests, production build and 98 HTTP checks pass. Browser/device/keyboard/themes/hydration/interaction QA NOT RUN. No backend, persistence, production authorization or moderation. Connect/DM consent and original plan quotas remain separate. W11 is unstarted. See W10_VERIFICATION.md; earlier phase checkpoint statements are historical.

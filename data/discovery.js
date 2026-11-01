@@ -18,7 +18,7 @@ export const discoveryItems = [
 ];
 export function searchDiscovery({ query = '', category = 'All', interest = '', projects = discoveryProjects, items = discoveryItems } = {}) {
  const words = query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
- return items.map(item => { if (!item.project) return item; const project = projects.find(project => project.id === item.id) || item.project; return { ...item, project, title: project.title, text: `${project.text} ${project.status} ${project.collaboration} ${project.skills.join(' ')}`, interests: project.tags, href: projectHref(project) }; }).filter(item => {
+ return [...items.filter(item=>!item.project),...[...projects].sort((a,b)=>Number(!!b.local)-Number(!!a.local)).map(project=>({id:project.id,category:'Projects',project,title:project.title,text:project.text+' '+project.status+' '+project.skills.join(' '),interests:project.tags,href:projectHref(project)}))].filter(item => {
   const haystack = `${item.title} ${item.text} ${item.interests.join(' ')}`.toLocaleLowerCase();
   return (category === 'All' || category === item.category) && (!interest || item.interests.includes(interest)) && words.every(word => haystack.includes(word));
  });

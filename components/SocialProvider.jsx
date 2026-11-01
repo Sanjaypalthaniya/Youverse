@@ -13,6 +13,8 @@ export function SocialProvider({ children }) {
  const [ownProfile, setOwnProfile] = useState(initialOwnProfile);
  const [profileEditDraft, setProfileEditDraft] = useState(null);
  const [projectOverrides, setProjectOverrides] = useState({});
+ const [deletedProjects,setDeletedProjects]=useState([]);
+ const [localDiscussions,setLocalDiscussions]=useState([]);
  const [projectDrafts, setProjectDrafts] = useState({});
  const [projectRequests, setProjectRequests] = useState(initialProjectRequests);
  const [starredProjects, setStarredProjects] = useState([]);
@@ -35,6 +37,6 @@ export function SocialProvider({ children }) {
  const [recentSearches, setRecentSearches] = useState([]);
  function rememberSearch(query) { const value = query.trim(); if (value) setRecentSearches(previous => [value, ...previous.filter(item => item.toLowerCase() !== value.toLowerCase())].slice(0, 5)); }
  function toggle(key, id) { setState(previous => toggleSocialValue(previous,key,id)); }
- return <SocialContext.Provider value={{ state, toggle, draft, setDraft, readNotifications, setReadNotifications, recentSearches, setRecentSearches, rememberSearch, ownProfile, setOwnProfile, profileEditDraft, setProfileEditDraft, projectOverrides, setProjectOverrides, projectDrafts, setProjectDrafts, projectRequests, setProjectRequests, starredProjects, setStarredProjects, circleMemberships, setCircleMemberships, circleReplies, setCircleReplies, circleReactions, setCircleReactions, circleDrafts, setCircleDrafts, connectState, setConnectState,socialContent,setSocialContent,accountPreferences,setAccountPreferences,messages,setMessages,readConversations,setReadConversations,appearance,resolvedTheme,changeAppearance }}>{children}</SocialContext.Provider>;
+ return <SocialContext.Provider value={{ deletedProjects, setDeletedProjects, localDiscussions, setLocalDiscussions, state, toggle, draft, setDraft, readNotifications, setReadNotifications, recentSearches, setRecentSearches, rememberSearch, ownProfile, setOwnProfile, profileEditDraft, setProfileEditDraft, projectOverrides, setProjectOverrides, projectDrafts, setProjectDrafts, projectRequests, setProjectRequests, starredProjects, setStarredProjects, circleMemberships, setCircleMemberships, circleReplies, setCircleReplies, circleReactions, setCircleReactions, circleDrafts, setCircleDrafts, connectState, setConnectState,socialContent,setSocialContent,accountPreferences,setAccountPreferences,messages,setMessages,readConversations,setReadConversations,appearance,resolvedTheme,changeAppearance }}>{children}</SocialContext.Provider>;
 }
 export const useSocial = () => useContext(SocialContext);

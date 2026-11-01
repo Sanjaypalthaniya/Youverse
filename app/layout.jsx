@@ -1,3 +1,4 @@
+import './community-session.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.scss';
 import './social.scss';
