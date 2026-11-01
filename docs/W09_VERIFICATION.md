@@ -83,4 +83,6 @@ W10 remains unstarted: full identity/project/Circle frontend workflows, durable 
 
 ## Git backup
 
-W09 begins from clean W08 HEAD `ca653ab`. No remote is configured; no remote was invented, no push attempted and no force-push/history rewrite used. Commits are local only. Dependency/build outputs, secrets and portable tools remain ignored. The actual W09 implementation hash is recorded after commit via a separate documentation checkpoint. Shell operations required approved escalation because sandbox startup still fails with a setup-refresh error.
+W09 implementation commit: **`dd957bbeb8486770a8cfdd4bba934b08152038cb`** (`W09: session publishing and synchronized social interactions`). A separate documentation checkpoint records this immutable implementation hash.
+
+W09 begins from clean W08 HEAD `ca653ab`. No remote is configured; no remote was invented, no push attempted and no force-push/history rewrite used. Commits are local only. Dependency/build outputs, secrets and portable tools remain ignored. Shell operations required approved escalation because sandbox startup still fails with a setup-refresh error.
