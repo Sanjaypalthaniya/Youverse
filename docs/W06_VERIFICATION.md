@@ -87,4 +87,6 @@ Circle membership does not change Follow, project collaboration, Connect matches
 
 ## Git backup
 
-No remote is configured. No remote was invented, no push was attempted and no force-push occurred. The W06 implementation hash is recorded after committing, followed by a documentation checkpoint. Portable Git remains in ignored `.tools/git`; shell commands needed approved escalation because sandbox process startup continues to fail with a setup-refresh error.
+W06 implementation commit: `f57cf5880e8157a6d5671821d72b8eddc721b3ef` (`W06: premium circles, discussions and session community previews`). A follow-up documentation commit records this immutable implementation hash. Inspect both with `.tools/git/cmd/git.exe log -2 --oneline`.
+
+No remote is configured. No remote was invented, no push was attempted and no force-push occurred. Portable Git remains in ignored `.tools/git`; shell commands needed approved escalation because sandbox process startup continues to fail with a setup-refresh error.
