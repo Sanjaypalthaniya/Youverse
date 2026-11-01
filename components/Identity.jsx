@@ -1,12 +1,13 @@
 'use client';
 import Link from 'next/link';
+import { ProjectCard } from './ProjectUI';
+import { useProjects } from './useProjects';
 import { useState } from 'react';
 import { MapPin, Share2, Settings, Sparkles, MessageCircle, ArrowUpRight, Leaf, Shield, Pencil } from 'lucide-react';
 import { Avatar, Badge, Button, Card, EmptyState, Modal } from './ui';
 import { FollowButton, PostCard } from './Social';
 import { useSocial } from './SocialProvider';
 import { makers, reflections, circles } from '../data/social';
-import { discoveryProjects } from '../data/discovery';
 import { getMaker, profileHref, profileCompletion, sharedCuriosityText } from '../data/identity';
 
 export function IdentityHero({ person, children, preview = false }) {
@@ -21,8 +22,8 @@ export function IdentityTimeline({ milestones }) {
  return <ol className="identity-timeline">{[...milestones].sort((first, second) => second.date.localeCompare(first.date)).map(item => <li key={item.id}><time dateTime={item.date}>{new Date(`${item.date}T12:00:00Z`).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })}</time><h3>{item.title}</h3><p>{item.description}</p></li>)}</ol>;
 }
 export function IdentityProjects({ person }) {
- const projects = discoveryProjects.filter(project => person.projectIds.includes(project.id));
- return projects.length ? <div className="identity-projects">{projects.map(project => <Card key={project.id}><div className={`identity-project-art cover-${project.color}`}><span>0{Number(project.id.split('-')[1]) + 1}</span><Leaf size={40}/></div><Badge>{project.status}</Badge><Link href="/projects"><h3>{project.title}</h3></Link><p>{project.text}</p><small>{person.id === 'self' ? 'Design collaboration · Demo project' : project.collaboration}</small><Link className="discovery-link" href="/projects">Project preview <ArrowUpRight size={16}/></Link></Card>)}</div> : <EmptyState title="Room for a new idea">Projects and collaborations will take shape here.</EmptyState>;
+ const { projects, projectRequests } = useProjects(); const selected = projects.filter(project => person.projectIds.includes(project.id) || project.ownerId === person.id || projectRequests.some(request => request.projectId === project.id && request.makerId === person.id && request.status === 'accepted'));
+ return selected.length ? <div className="project-grid">{selected.map(project => <ProjectCard key={project.id} project={project}/>)}</div> : <EmptyState title="Room for a new idea">Projects and collaborations will take shape here.</EmptyState>;
 }
 function IdentityOverview({ person }) {
  return <><div className="identity-two-column"><Card><span className="eyebrow">WHAT I BRING</span><h2>Skills & capabilities</h2><div className="tag-row">{person.skills.length ? person.skills.map(skill => <Badge key={skill}>{skill}</Badge>) : <p className="muted">Still exploring what I can bring.</p>}</div></Card><Card><span className="eyebrow">WHAT MOVES ME</span><h2>Interests & curiosities</h2><div className="tag-row">{person.interests.map(interest => <Link key={interest} href={`/explore?q=${encodeURIComponent(interest)}`}><Badge>{interest}</Badge></Link>)}</div></Card></div><Card className="identity-intentions"><Sparkles size={22}/><h2>Becoming, with intention</h2>{person.intentions.length ? <ul>{person.intentions.map(intention => <li key={intention}>{intention}</li>)}</ul> : <p>A little space to discover what comes next.</p>}</Card><Card><span className="eyebrow">LITTLE THINGS THAT SAY A LOT</span><h2>Identity highlights</h2>{person.highlights.length ? <ul className="identity-highlights">{person.highlights.map(highlight => <li key={highlight}><span>✳</span>{highlight}</li>)}</ul> : <p className="muted">There is room for your next small highlight.</p>}</Card><section className="identity-section"><div className="section-heading"><h2>Growing, one step at a time</h2><span>Personal milestones</span></div><Card><IdentityTimeline milestones={person.milestones}/></Card></section><section className="identity-section"><div className="section-heading"><h2>Ideas in the making</h2><Link href="/projects">Explore projects ↗</Link></div><IdentityProjects person={person}/></section></>;

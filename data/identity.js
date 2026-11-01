@@ -15,7 +15,7 @@ export const initialOwnProfile = {
  bio: 'Designer by craft. Curious by nature. Collecting little moments and building meaningful things with people who care.', statement: 'Always a work in progress. Keep becoming.',
  skills: ['Product design', 'Prototyping', 'Visual storytelling'], interests: ['Creativity', 'Slow living', 'Side projects', 'Design', 'Photography'], intentions: ['Create with courage', 'Collaborate thoughtfully'],
  highlights: ['Helping The Little Library find its shape'], milestones: [{ id: 'aarav-1', date: '2026-10-20', title: 'Joined The Little Library collaboration', description: 'Making room for stories, one neighbourhood at a time.' }, { id: 'aarav-2', date: '2026-09-12', title: 'Made time for a personal practice', description: 'Twenty minutes of making, without a brief.' }],
- projectIds: ['project-0', 'project-1'], circleIds: ['creative', 'mindful'], followerIds: ['maker-1']
+ projectIds: ['project-0', 'project-1', 'project-3'], circleIds: ['creative', 'mindful'], followerIds: ['maker-1']
 };
 export function getMaker(identifier) { return makerProfiles.find(maker => maker.slug === identifier || maker.id === identifier); }
 export function profileHref(maker) { return `/profile/${maker.slug}`; }
