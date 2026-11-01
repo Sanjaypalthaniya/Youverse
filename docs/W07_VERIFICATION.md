@@ -94,3 +94,5 @@ No remote is configured. No remote was invented, no push was attempted and no fo
 ## Recovery audit - 2026-11-01
 
 Branch master; initial HEAD e4e454776f01a619b142d18f1f47b09726d514af. Reviewed modified/untracked files, empty staging area, remotes and ignore rules. Changes corresponded to the interrupted W07 work; no unrelated user changes were staged. Dependencies, build outputs, secrets and portable tools remain ignored. Fresh lint, all 30 tests, build, production serving of every prerendered user page and diff checks passed before recovery commit. The earlier 66-route check remains the detailed W07 HTTP evidence above. Browser QA NOT RUN. W08 had not begun at this recovery checkpoint.
+
+Recovery implementation commit: e7f5e9dbe6a3609de63fda25dfa28e04a6208feb. Verified in Git history; a documentation follow-up records this hash. No remote configured; local backup only.
