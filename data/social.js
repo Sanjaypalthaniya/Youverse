@@ -1,4 +1,4 @@
-import { people, posts } from './mock';
+import { people, posts } from './mock.js';
 export const makers = people.map((person, index) => ({ ...person, id: `maker-${index}`, following: index === 0 }));
 export const interests = ['Creativity', 'Slow living', 'Side projects', 'Personal growth'];
 export const circles = [{ id: 'creative', name: 'The Creative Corner', members: 128 }, { id: 'mindful', name: 'Mindful Moments', members: 86 }];

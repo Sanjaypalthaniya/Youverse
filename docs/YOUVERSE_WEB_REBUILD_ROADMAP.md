@@ -1,10 +1,10 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02 static UI is implemented; see the W02 verification report. W03 has not begun.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02 static UI is implemented; see the W02 verification report. W03 static UI is implemented; W04 has not begun.
 
 ## Status vocabulary
 
-Each feature progresses through: Not started → Static UI complete → Local functionality complete → Backend integrated. Tested is tracked separately and requires actual verification. A shell preview does not complete the corresponding product feature. Historical W01 entries below record the original handoff. Current W02 lint, build and route results supersede runtime blockers; browser verification remains open. No backend feature is integrated.
+Each feature progresses through: Not started → Static UI complete → Local functionality complete → Backend integrated. Tested is tracked separately and requires actual verification. A shell preview does not complete the corresponding product feature. Historical W01 entries below record the original handoff. Current W02/W03 lint, tests, build and route results supersede runtime blockers; browser verification remains open. No backend feature is integrated.
 
 ## Phases
 
@@ -12,7 +12,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 |---|---|---|
 | W01 | Foundation, Design System, Navigation | Foundation preserved; lint/build/HTTP serving verified during W02; browser QA open |
 | W02 | Static Feed, Stories, Reels | Static UI complete; session demos implemented; lint/build/HTTP verified; browser QA open |
-| W03 | Static Explore, Search, Create, Notifications | Not started; W01 shells only |
+| W03 | Static Explore, Search, Create, Notifications | Static UI complete; local filtering/composer/read-state demos; automated checks verified, browser QA open |
 | W04 | Static Living Identity & Profiles | Not started; W01 shell only |
 | W05 | Static Projects & Collaboration | Not started; W01 shell only |
 | W06 | Static Circles & Communities | Not started; W01 shell only |
@@ -42,7 +42,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 
 ## Feature ledger
 
-The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. Each entry below remains Not started unless a W01 preview is explicitly recorded. All entries: Backend integrated = No; Tested = No.
+The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. The entries below distinguish completed static UI and session demos from later product workflows. Backend integrated = No for every feature. W03 filtering and draft validation have automated coverage; HTTP/build checks cover route serving. Browser interaction and visual checks remain open. Historical W01 inventory above is retained as the original handoff.
 
 | Area / feature | Product implementation status | Target |
 |---|---|---|
@@ -51,11 +51,11 @@ The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. Ea
 | Reflections and posts; image/media posts | Static UI complete (sample cards); creation not started | W02/W09 |
 | Stories; full-screen Story Viewer | Static UI complete; manual viewer, reactions and reply demos; no publishing | W02/W09 |
 | Reels | Static UI complete; illustrated simulation, unavailable state, comment modal; no streaming | W02/W09 |
-| Explore; search | Not started (W01 shell and local person filtering only) | W03/W09 |
-| Post creation | Not started (editable W01 draft shell only) | W03/W09 |
+| Explore; search | Static UI complete; multi-category query/interest filtering and session history; unit-tested, no backend | W03/W09 |
+| Post creation | Static UI complete; seven-format session draft, validation and preview; no uploads or real publishing | W03/W09 |
 | Likes; comments; bookmarks; sharing | Session likes/bookmarks/comments and clipboard links; persistence not started | W09 |
 | Follow/unfollow | Session demo; persistence not started | W09 |
-| Notifications | Not started (W01 sample activity shell) | W03/W09 |
+| Notifications | Static UI complete; local category/read-state demos; no live delivery | W03/W09 |
 | Public profiles | Not started (shared W01 profile preview) | W04/W10 |
 | Reporting; hiding; blocking | Hide/undo and report menu demo; no moderation service or blocking | W09 |
 | Profile overview | Not started (W01 identity summary preview) | W04/W10 |
@@ -82,7 +82,7 @@ The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. Ea
 | Pro: ₹399/month, 40 outgoing/day, additional discovery preferences, priority introductions, Pro badge | Not started | W08/W11 |
 | Welcome; demo login | Static UI complete (demo entry route) | W01 |
 | Onboarding | Not started | W08 |
-| Messages; account notifications | Not started (W01 shells only) | W08/W11 |
+| Messages; account notifications | Messages remain W01 shell; notification static center complete in W03, no live account activity | W08/W11 |
 | Appearance | Theme toggle source complete; remaining controls not started | W01/W08 |
 | Privacy; safety; help; account settings | Not started (W01 explanatory shells only) | W08/W11 |
 
@@ -105,3 +105,9 @@ W01 requires successful install, lint, build, route serving, responsive/theme/ac
 Static UI complete: premium feed, six post variants, story tray/full-screen overlay, segmented manual progress, reaction/reply demos, linked project/Reel CTA, immersive illustrated Reels, comment modal, post detail and related reflections, trending curiosities and suggested makers/Circles. Shared stable maker/post/story/Reel/comment/interest/Circle data. Root session provider shares follows, likes and bookmarks across routes.
 
 Local demos only: following filters, like/save/follow/hide, story viewed status, comments, reply/reaction feedback, clipboard sharing and simulated playback/mute. No backend integrated. Persistent social behavior remains W09. Public creator links currently lead to the shared W01 profile preview with a maker query; individual profiles remain W04. Loading and unavailable UI exist. Build/lint and HTTP routes verified; visual/device/interaction/keyboard QA not performed. See W02_VERIFICATION.md for exact evidence and backup status. W03?W13 and Flutter remain unstarted.
+
+## W03 checkpoint - 2026-11-01
+
+Static UI complete: Explore hero and discovery grid, six categories, query suggestions/recent searches, trending filters, maker/post/Reel/Circle/project discovery cards; seven-format Create composer with illustrated media, tags/Circle/visibility, preview, draft status, validation and demo success; grouped Notifications with five categories, avatars/icons, individual/all-read actions, settings entry and empty states. Shared mock metadata reuses W02 identities/content and existing projects/Circles.
+
+Local functionality complete only as demos: multi-word/category/interest filtering, session draft/history/read state, preview and validation. Automated tests verify search, draft validation and data links. Lint/build and HTTP route checks pass. Browser/device/keyboard/interaction QA NOT RUN. No uploads, persistent publishing, notification service or backend integrated. See W03_VERIFICATION.md for exact checks, file inventory, limits and checkpoint. W04 through W13 and Flutter remain unstarted.

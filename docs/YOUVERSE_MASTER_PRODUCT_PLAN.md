@@ -323,3 +323,10 @@ Provide:
 ## Current implementation checkpoint ? W02, 2026-11-01
 
 The original specification above remains the canonical future product scope. W02 adds static Feed, Stories, Reels and Post Detail using the W01 shell, Next.js 16, JSX, Bootstrap 5 and SCSS. Session interactions are demos, not persistent social functionality or production moderation. Reels are original CSS illustrations with explicitly simulated playback/audio. Individual creator profiles remain W04. No backend, database, payment, authentication, real private messaging or mobile application was added. Mutual acceptance for private messages, Dating 18+ opt-in, all Premium rules and the Flutter-after-web sequence remain unchanged. See the roadmap and W02_VERIFICATION.md for current verification. W03 has not begun.
+
+
+## W03 implementation checkpoint - 2026-11-01
+
+Static Explore/Search, multi-format Create and Notifications are implemented. Discovery reuses existing makers, posts, Reels, projects and Circles. Search is client-side over fixtures; drafts, history and notification reads are session demos; preview and Publish feedback do not upload or publish content. Visibility has no production access enforcement. Existing W01/W02 remain in place. Full public profiles remain W04; all W04-W13 work remains unstarted. The complete original feature scope above remains authoritative.
+
+Product rules remain unchanged: Follow and Connect are separate; Free 3 outgoing/day, Plus 15/day at INR 199/month, Pro 40/day at INR 399/month; private DMs require mutual Connect acceptance; incoming acceptance and matched conversations are free; Connect discovery is optional; Dating requires explicit 18+ opt-in. Normal social features remain free and Premium cannot bypass consent. No real authentication, database, payments or backend were added. Flutter/Dart mobile begins only after the website is finalized. Consult W03_VERIFICATION.md and the roadmap for actual tests and limitations.
