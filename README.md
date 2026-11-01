@@ -1,4 +1,4 @@
-# YOUVERSE - W05
+# YOUVERSE - W06
 
 Identity-first social website using Next.js 16 App Router, JavaScript/JSX, Bootstrap 5, SCSS and Lucide. Static-first, centralized mock data, lightweight session state.
 
@@ -22,11 +22,15 @@ W01 supplies the shared shell, desktop sidebar, mobile bottom navigation, theme 
 
 W04 adds a Living Identity dashboard at `/profile`, session-only profile editing at `/profile/edit`, and canonical public maker profiles at `/profile/ananyacreates`, `/profile/kabir.builds` and `/profile/meerawanders`. Profiles include skills, curiosities, intentions, highlights, milestones, existing projects and Circle memberships. Shared-curiosity explanations use actual interest intersections. Follow uses the existing W02 session state; Message only explains the mutual-Connect requirement.
 
-W05 upgrades Projects discovery, four canonical detail pages, project creation previews, an owned-project session editor, milestone progress, field notes, stars and collaboration introductions. The three original projects retain their owners. A fourth, Small Beginnings, is an Aarav-owned demo for editing and incoming accept/decline workflows. Accepting project collaboration never creates a Connect match or unlocks private DMs. W06 has not started.
+W05 upgrades Projects discovery, four canonical detail pages, project creation previews, an owned-project session editor, milestone progress, field notes, stars and collaboration introductions. The three original projects retain their owners. A fourth, Small Beginnings, is an Aarav-owned demo for editing and incoming accept/decline workflows. Accepting project collaboration never creates a Connect match or unlocks private DMs.
+
+W06 adds Circle discovery, three community detail pages, five discussion pages, per-Circle discussion composers, join/leave confirmations, session replies/reactions, named member lists, guidelines and clearly labeled moderation previews. Joining a Circle never creates a Connect match or unlocks DMs. W07 has not started.
 
 Routes: /, /welcome, /login, /explore (supports ?q=...), /reels, /create, /connect, /messages, /notifications, /profile, /profile/edit, the three maker profiles above, /projects, /circles, /settings, /post/1 through /post/6. Invalid sections/posts/maker slugs return 404. Creator links resolve to the matching maker; Project, Circle and Connect workflows remain previews. `/profile` always shows the signed-in demo identity, including when old maker query parameters are present. Public URLs use the canonical slugs, not internal maker IDs.
 
 Project routes: `/projects/create`, `/projects/the-little-library`, `/projects/everyday-illustrated`, `/projects/slow-sunday-club`, `/projects/small-beginnings`. Add `/edit` for the editor route: Small Beginnings exposes the demo owner form; other existing projects show a UI ownership explanation. Unknown project slugs return 404. No secure authorization is claimed.
+
+Circle routes: `/circles/the-creative-corner`, `/circles/mindful-moments`, `/circles/builders-and-dreamers`. Each supports `/discussion/create` and fixture discussions at `/discussion/[discussionId]`. Unknown Circle/discussion slugs and cross-Circle discussion IDs return 404. Details include Members and Guidelines views. Creative Corner and Mindful Moments are joined initially; Builders & Dreamers demonstrates joining from outside a Circle.
 
 ## Source
 
@@ -45,6 +49,9 @@ Project routes: `/projects/create`, `/projects/the-little-library`, `/projects/e
 - data/projects.js: canonical project fixtures, references, filtering, validation, progress and project-request lifecycle helpers.
 - components/Projects.jsx, components/ProjectUI.jsx, components/ProjectEditor.jsx, components/useProjects.js: discovery/detail, reusable project visuals, session editor and shared state adapter.
 - app/projects/, app/projects.scss, tests/projects.test.mjs: project routes, styling and six project tests.
+- data/circles.js: canonical Circle/discussion/reply fixtures, membership, validation, filtering and interaction helpers.
+- components/Circles.jsx, components/CircleUI.jsx, components/CircleDiscussion.jsx, components/CircleComposer.jsx, components/useCircles.js: W06 screens, shared visuals and root-session adapter.
+- app/circles/, app/circles.scss, tests/circles.test.mjs: Circle routes, responsive styling and seven Circle tests.
 - docs/: canonical product plan, roadmap and phase verification reports.
 
 ## Demo boundaries and verification
@@ -55,7 +62,9 @@ Profile Save updates the shared session identity used by the dashboard, shell, c
 
 Project editing updates the existing owned fixture across project/profile/Explore cards in this tab; refresh resets it. Project creation keeps a session draft and validates a publishing preview; it does not add a project to discovery or create a public URL. Request submit/cancel/accept/decline and accepted team membership are session-only demos. No request, notification or message is sent. Stars are separate from Feed bookmarks. Milestone completion determines project progress. Cover artwork is an illustration, not an upload; visibility is unenforced preview metadata. Editor links/Cancel/header search warn about unsaved changes, refresh uses a browser unload prompt where supported, and client back/forward retains drafts.
 
-Lint, fifteen automated tests, production build and 42 HTTP checks pass; see docs/W05_VERIFICATION.md for exact evidence, file inventory, limits and Git checkpoint. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W06 has not started.
+Circle membership, member-count deltas, replies, appreciation and discussion drafts last for the current tab session and reset on refresh. My Circles, profile memberships and member lists use the same state. Discussion creation validates a publishing preview and keeps a draft without adding a real discussion or URL. Replies are appended locally to existing discussions. Joining is a UI requirement for composer/reply/reaction controls, not server-enforced access control. Member totals are fixture aggregates; named member lists are labeled samples. Reports and blocks are explanatory previews only.
+
+Lint, twenty-two automated tests, production build and 58 HTTP checks pass; see docs/W06_VERIFICATION.md for exact evidence, file inventory, limits and Git checkpoint. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W07 has not started.
 
 ## Backup
 
