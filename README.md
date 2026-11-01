@@ -1,4 +1,4 @@
-# YOUVERSE - W08
+# YOUVERSE - W09
 
 Identity-first social website using Next.js 16 App Router, JavaScript/JSX, Bootstrap 5, SCSS and Lucide. Static-first, centralized mock data, lightweight session state.
 
@@ -28,7 +28,9 @@ W06 adds Circle discovery, three community detail pages, five discussion pages, 
 
 W07 upgrades `/connect` with Discover/Signals/Incoming/Matches, five intentions, explicit Dating opt-in and 18+ demo attestation, request/duplicate/quota validation, match celebration, block/unblock/unmatch, safety/preferences and plan comparison previews. Discovery starts paused; two clearly seeded incoming introductions let you explore free acceptance and mutual matches. Public profiles, Explore People and suggested makers use the same Connect state. W07 was safely recovered as `e7f5e9d`, with documentation checkpoint `baa0d7e`.
 
-W08 adds `/premium` with original pricing, comparison, quota usage and confirmed demo switching; a consent-gated `/messages` inbox and `/messages/[makerSlug]` conversations; ten Settings sections; Safety, Help, welcome/login refinement and demo onboarding. Only valid mutual matches expose a local message composer. No accessible conversations are seeded; accept an existing incoming Connect introduction first. Unmatch/block disables sending while existing local history can remain read-only. W09 has not started.
+W08 adds `/premium` with original pricing, comparison, quota usage and confirmed demo switching; a consent-gated `/messages` inbox and `/messages/[makerSlug]` conversations; ten Settings sections; Safety, Help, welcome/login refinement and demo onboarding. Only valid mutual matches expose a local message composer. No accessible conversations are seeded; accept an existing incoming Connect introduction first. Unmatch/block disables sending while existing local history can remain read-only.
+
+W09 adds actual session-only social publishing: reflection/image/question/milestone/project/Circle posts enter the Feed, Stories enter the tray, and Reels enter the vertical view. Preview and explicit confirmation precede publication. Shared likes/comments/bookmarks, hide/undo, own-content text edits/deletion, local detail routes, profile reflections, search and own-action notifications stay synchronized during client navigation. W10 has not started.
 
 Routes: /, /welcome, /login, /explore (supports ?q=...), /reels, /create, /connect, /messages, /notifications, /profile, /profile/edit, the three maker profiles above, /projects, /circles, /settings, /post/1 through /post/6. Invalid sections/posts/maker slugs return 404. Creator links resolve to the matching maker; Project, Circle and Connect workflows remain previews. `/profile` always shows the signed-in demo identity, including when old maker query parameters are present. Public URLs use the canonical slugs, not internal maker IDs.
 
@@ -62,6 +64,9 @@ Circle routes: `/circles/the-creative-corner`, `/circles/mindful-moments`, `/cir
 - data/account.js, components/Premium.jsx, components/Messages.jsx, components/Account.jsx: W08 plan availability, message/settings helpers and screens, onboarding, safety and support.
 - app/premium/, app/messages/[makerSlug]/, app/settings/[section]/, app/onboarding/, app/help/, app/account.scss: W08 routes and styling.
 - tests/account.test.mjs: five W08 plan, consent, message, preference and onboarding tests.
+- data/sessionSocial.js, components/useSocialContent.js: immutable publication/interaction helpers, selectors and root session-content adapter.
+- components/SocialContent.jsx, components/SessionComposer.jsx, app/session-social.scss: W09 social screens and confirmed local publication, retaining the original design primitives.
+- tests/social-session.test.mjs: eleven social-session regression tests.
 - docs/: canonical product plan, roadmap and phase verification reports.
 
 ## Demo boundaries and verification
@@ -80,7 +85,11 @@ Free/Plus/Pro simulate 3/15/40 outgoing requests per India-time day, priced at I
 
 W08 messages are outbound, session-only local records. No delivery, read receipt, automated reply, real-time service or attachment upload is simulated. Inbox “New match” means an unvisited valid demo match, not a received message. Old `/messages?maker=...` entry links navigate to canonical conversations after hydration; direct unmatched URLs are locked. Appearance has one root light/dark/system preference using the existing `youverse-theme` storage key. Only appearance persists; messages, plans, preferences and onboarding reset on refresh. Notification/visibility controls are previews, not delivery services or access enforcement. Support forms never send a note or claim delivery.
 
-Lint, thirty-five automated tests, production build and 86 HTTP checks pass; see docs/W08_VERIFICATION.md for Stage A recovery and Stage B evidence, file inventory, limits and Git checkpoints. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W09 has not started.
+Local IDs combine a monotonic sequence and tab scope. `/post/local-[sequence]-[scope]` opens a record only in the originating session. A fresh tab/refresh/deleted record shows an honest unavailable presentation, not a fabricated post. Media remains illustrated; Story progress is manual, while Reels playback/audio controls are explicitly simulated. Arrow/Escape controls, comments and next/previous navigation are implemented, but browser interaction testing has not been performed. Comment counts use the actual visible sample comment records plus session comments, rather than the original aggregate mock counts. Saved Feed contains posts; Reel bookmarks are shared state displayed on Reels.
+
+Project Updates require a valid owned/collaborating project. Circle-related posts require joined membership; neither action changes a roadmap, creates a discussion, consumes Connect quota or unlocks messages. Drafts and local records reset on refresh; only the pre-existing appearance preference persists. Publication activity describes only your own local action. Reports and Story replies remain clearly labeled previews.
+
+Lint, forty-six automated tests, production build and 90 HTTP checks pass; see docs/W09_VERIFICATION.md for exact scope, file inventory, checks, limitations and Git checkpoint. Browser/device/visual/keyboard interaction checks were NOT RUN because no browser-control tool is available. W10 has not started.
 
 ## Backup
 

@@ -1,6 +1,6 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W01 contains no backend, database, real authentication or payments. W02–W08 static UI is implemented; see the phase verification reports. W09 has not begun.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W02–W08 static UI and W09 session-based social functionality are implemented; see the phase verification reports. W10 has not begun. No backend, database, real authentication or payments are integrated.
 
 ## Status vocabulary
 
@@ -18,7 +18,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 | W06 | Static Circles & Communities | Static UI complete; session membership/replies/reactions/draft previews; helper tests, build and HTTP verified; browser QA open |
 | W07 | Static Connect Discovery & Matching | Static UI complete; session discovery/requests/matches/safety/quota previews; helper tests, build and HTTP verified; browser QA open |
 | W08 | Static Premium, Messages & Settings | Static UI complete; original plan/quota previews, consent-gated session messaging, settings/safety/help/onboarding; tests/build/HTTP pass, browser QA open |
-| W09 | Social Frontend Functionality | Not started; like/bookmark/session filters are foundation demos |
+| W09 | Social Frontend Functionality | Session publishing and shared social interactions complete; 46 tests/build/HTTP verified; browser QA open; no persistence/backend |
 | W10 | Identity, Projects & Circles Functionality | Not started |
 | W11 | Connect, Premium & Messaging Functionality | Not started |
 | W12 | Responsive QA, Accessibility & Final Web Verification | Not started |
@@ -46,14 +46,14 @@ The canonical specification in YOUVERSE_MASTER_PRODUCT_PLAN.md governs scope. Th
 
 | Area / feature | Product implementation status | Target |
 |---|---|---|
-| Home Feed | Static UI complete (foundation only) | W02/W09 |
-| For You, Following, Saved filters | Session demo only; full functionality not started | W02/W09 |
-| Reflections and posts; image/media posts | Static UI complete (sample cards); creation not started | W02/W09 |
+| Home Feed | Session functionality complete; local publication, actual Follow/Saved selection and shared actions | W02/W09 |
+| For You, Following, Saved filters | Session functionality complete using shared Follow/bookmark state; refresh resets | W02/W09 |
+| Reflections and posts; image/media posts | Session functionality complete; fixtures plus local records/media placeholders and ownership controls | W02/W09 |
 | Stories; full-screen Story Viewer | Static UI complete; manual viewer, reactions and reply demos; no publishing | W02/W09 |
 | Reels | Static UI complete; illustrated simulation, unavailable state, comment modal; no streaming | W02/W09 |
 | Explore; search | Static UI complete; multi-category query/interest filtering and session history; unit-tested, no backend | W03/W09 |
-| Post creation | Static UI complete; seven-format session draft, validation and preview; no uploads or real publishing | W03/W09 |
-| Likes; comments; bookmarks; sharing | Session likes/bookmarks/comments and clipboard links; persistence not started | W09 |
+| Post creation | Session publication complete for seven formats, scoped IDs, reference checks, preview/confirmation and appropriate view insertion; no remote upload/publication | W03/W09 |
+| Likes; comments; bookmarks; sharing | Shared session reactions/comments/bookmarks and copy links; local detail unavailable states; no remote persistence | W09 |
 | Follow/unfollow | Session demo; persistence not started | W09 |
 | Notifications | Static UI complete; local category/read-state demos; no live delivery | W03/W09 |
 | Public profiles | Static UI complete; three canonical maker routes, per-maker content, explainable shared interests, existing follow state, gated Message explanation | W04/W10 |
@@ -139,3 +139,9 @@ Recovered the interrupted W07 implementation without discarding work. Static Con
 W07 recovery was committed and verified first (e7f5e9d; documentation baa0d7e). W08 static UI complete: original plans/pricing/comparison/usage and confirmed demo switching; consent-aware inbox and three canonical conversation routes; ten Settings sections; light/dark/system appearance; notification/visibility preferences; shared Connect/Dating/safety state and unblock confirmation; welcome/login/onboarding and Help/support preview.
 
 Local demos: valid-match-only message append, read-only history after unmatch/block, session preferences/onboarding/plan selection. Direct conversation URLs cannot create consent. No real authentication, subscription, delivery, moderation or backend. Lint, 35 tests, build and 86 production HTTP checks pass; browser/device/theme/modal/keyboard/hydration interactions NOT RUN. W09 and later complete functionality phases remain unstarted. See W08_VERIFICATION.md for both-stage evidence and limits. Prior phase checkpoint statements above are historical.
+
+## W09 checkpoint - 2026-11-01
+
+Session functionality complete: seven-format preview/confirmed publication, Feed/Stories/Reels insertion, scoped stable local IDs and unavailable-session detail state, shared likes/comments/bookmarks, actual Following/Saved selectors, hide/undo, own text edit/delete, local profile/discovery/activity integration and scoped keyboard media navigation. No remote media or server publication. Validation respects current project participation and Circle membership without mutating their workflows.
+
+Tested: lint, 46 automated tests, build, 90 production HTTP checks and diff checks. Browser/device/theme/hydration/modal/interaction QA NOT RUN. No backend integrated. Existing consent, plans, messages, identity, project/Circle and preference state is retained. W10 and later complete phases remain unstarted. See W09_VERIFICATION.md; previous phase checkpoint statements are historical.

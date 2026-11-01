@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import {useSocialContent} from './useSocialContent';
 import { ConnectPersonActions, MessageConsentButton, ConnectSafety } from './ConnectUI';
 import { useCircles } from './useCircles';
 import { circleHref } from '../data/circles';
@@ -32,11 +33,12 @@ function IdentityOverview({ person }) {
  return <><div className="identity-two-column"><Card><span className="eyebrow">WHAT I BRING</span><h2>Skills & capabilities</h2><div className="tag-row">{person.skills.length ? person.skills.map(skill => <Badge key={skill}>{skill}</Badge>) : <p className="muted">Still exploring what I can bring.</p>}</div></Card><Card><span className="eyebrow">WHAT MOVES ME</span><h2>Interests & curiosities</h2><div className="tag-row">{person.interests.map(interest => <Link key={interest} href={`/explore?q=${encodeURIComponent(interest)}`}><Badge>{interest}</Badge></Link>)}</div></Card></div><Card className="identity-intentions"><Sparkles size={22}/><h2>Becoming, with intention</h2>{person.intentions.length ? <ul>{person.intentions.map(intention => <li key={intention}>{intention}</li>)}</ul> : <p>A little space to discover what comes next.</p>}</Card><Card><span className="eyebrow">LITTLE THINGS THAT SAY A LOT</span><h2>Identity highlights</h2>{person.highlights.length ? <ul className="identity-highlights">{person.highlights.map(highlight => <li key={highlight}><span>✳</span>{highlight}</li>)}</ul> : <p className="muted">There is room for your next small highlight.</p>}</Card><section className="identity-section"><div className="section-heading"><h2>Growing, one step at a time</h2><span>Personal milestones</span></div><Card><IdentityTimeline milestones={person.milestones}/></Card></section><section className="identity-section"><div className="section-heading"><h2>Ideas in the making</h2><Link href="/projects">Explore projects ↗</Link></div><IdentityProjects person={person}/></section></>;
 }
 export default function Identity({ makerId }) {
+ const {posts:sessionReflections}=useSocialContent();
  const { memberships: joinedCircles, memberCount } = useCircles();
  const { ownProfile, state } = useSocial(); const person = makerId ? getMaker(makerId) : ownProfile; const own = !makerId;
  const [tab, setTab] = useState('Overview'); const [modal, setModal] = useState(''); const [notice, setNotice] = useState('');
  const tabs = ['Overview', 'Reflections', 'Projects', 'Milestones'];
- const posts = own ? [] : reflections.filter(post => post.person === person.personIndex);
+ const posts = own ? sessionReflections.filter(post=>post.authorId==='self') : sessionReflections.filter(post => post.person === person.personIndex);
  const completion = profileCompletion(person); const memberships = circles.filter(circle => own ? joinedCircles.includes(circle.id) : circle.memberIds.includes(person.id));
  async function share() { const url = `${window.location.origin}${own ? '/profile' : profileHref(person)}`; try { await navigator.clipboard.writeText(url); setNotice(own ? 'Demo profile link copied. Session edits are visible in this tab only.' : 'Maker profile link copied.'); } catch { setNotice(`Share this profile: ${url}${own ? ' (session edits are local to this tab)' : ''}`); } }
  function tabKey(event, index) { let next = index; if (event.key === 'ArrowRight') next = (index + 1) % tabs.length; else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length; else if (event.key === 'Home') next = 0; else if (event.key === 'End') next = tabs.length - 1; else return; event.preventDefault(); setTab(tabs[next]); event.currentTarget.parentElement.children[next].focus(); }
