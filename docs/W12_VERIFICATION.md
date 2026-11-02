@@ -129,7 +129,7 @@ No domain helper rules, prior tests, package/dependency versions, Connect pricin
 
 ## Git backup
 
-Implementation hash is recorded after the W12 checkpoint, followed by a documentation checkpoint. Only W12 stabilization, QA drivers/evidence and documentation are included. No remote is configured; no push was attempted or remote invented. No reset, force-push or history rewrite. Commits are local only; dependencies, browser binaries, generated builds, portable Git and secrets stay ignored.
+W12 stabilization commit: **1f6ef773fc642f921318f81735746abb51671f32** (W12: browser QA, accessibility fixes and frontend stabilization). A separate documentation checkpoint records this immutable hash; inspect both with .tools/git/cmd/git.exe log -2 --oneline. Only W12 stabilization, QA drivers/evidence and documentation are included. No remote is configured; no push was attempted or remote invented. No reset, force-push or history rewrite. Commits are local only; dependencies, browser binaries, generated builds, portable Git and secrets stay ignored.
 
 To connect an actual empty private GitHub repository, create it privately in your own account without initializing a competing history, replace the placeholders below with its real URL, and run:
 
