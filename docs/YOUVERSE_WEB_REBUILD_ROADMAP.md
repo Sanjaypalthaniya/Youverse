@@ -1,6 +1,6 @@
 # YOUVERSE web rebuild roadmap
 
-Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W02–W08 static UI and W09 session-based social functionality are implemented; see the phase verification reports. W10 session identity/project/Circle functionality is implemented; W11 session Connect/Premium/Messages functionality is implemented; W12 has not begun. No backend, database, real authentication or payments are integrated.
+Website first. Finalize the complete website UI, UX and frontend functionality before starting the Android/iOS application in **Flutter and Dart**. Shared production backend integration begins in W13 onward. W02–W08 static UI and W09 session-based social functionality are implemented; see the phase verification reports. W10 session identity/project/Circle functionality is implemented; W11 session Connect/Premium/Messages functionality is implemented; W12 Chromium stabilization and automated QA have run; final manual QA remains open. No backend, database, real authentication or payments are integrated.
 
 ## Status vocabulary
 
@@ -21,7 +21,7 @@ Each feature progresses through: Not started → Static UI complete → Local fu
 | W09 | Social Frontend Functionality | Session publishing and shared social interactions complete; 46 tests/build/HTTP verified; browser QA open; no persistence/backend |
 | W10 | Identity, Projects & Circles Functionality | Local functionality implemented; 58 tests/build/98 HTTP checks pass; browser QA open; no persistence/backend |
 | W11 | Connect, Premium & Messaging Functionality | Session functionality implemented; 73 tests/build/98 HTTP checks pass; browser QA open; no production services |
-| W12 | Responsive QA, Accessibility & Final Web Verification | Not started |
+| W12 | Responsive QA, Accessibility & Final Web Verification | Chromium stabilization verified: 14 interaction groups, 200 viewport/theme checks, 62 axe scans; final manual/device/AT gate OPEN |
 | W13 onward | Backend & Production Features | Not started |
 
 ## W01 foundation inventory
@@ -157,3 +157,9 @@ Lint, 58 tests, production build and 98 HTTP checks pass. Browser/device/keyboar
 Canonical Connect now provides functional paid filters, editable personalized templates, expanded seeded-incoming summaries, local priority presentation and own Pro badges. Original opt-in/Dating/lifecycle/India-day quotas are retained and hardened. Root current-state commands protect request/message writes, with match-only inbox, read-only history, local read reminders and canonical consent-aware profile/notification links. No replies/interest/matches are fabricated.
 
 Lint, 73 tests, production build and 98 HTTP checks pass. Browser/device/theme/keyboard/modal/hydration/end-to-end QA NOT RUN. W12 is unstarted; its handoff is detailed in W11_VERIFICATION.md. No backend, durable storage, payments, real-time delivery or production authorization. Earlier checkpoint statements remain historical.
+
+## W12 stabilization checkpoint - 2026-11-02
+
+Actual Chromium 156 interactions and axe were enabled through an isolated ignored QA tool install. Fixed repeated Connect URL/tab navigation, contrast, Feed keyboard tabs, invalid Story/notification ARIA, missing primary headings, corrupted shell characters and icon metadata. All 73 helper tests, lint/build, 99 HTTP checks, 14 browser interaction groups, 200 viewport/theme measurements and 62 axe scans pass; final tested runtime logs are clean. Five screenshots were manually inspected.
+
+W12 final manual sign-off is OPEN for real devices, other browser engines, screen-reader/zoom/nested-dialog and exhaustive visual review. No known critical/high defect remains in executed scenarios, but no full website/production verification is claimed. W13 has not started. See W12_VERIFICATION.md and docs/qa/w12/results.json. Earlier NOT RUN statements remain historical phase evidence.

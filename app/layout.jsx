@@ -1,3 +1,4 @@
+import './qa.scss';
 import './connect-functionality.scss';
 import './community-session.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';

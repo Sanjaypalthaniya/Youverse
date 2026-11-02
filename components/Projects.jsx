@@ -33,7 +33,7 @@ export function ProjectRequests({ project }) {
 }
 export function ProjectDetail({ projectId }) {
  const { projects, projectRequests, setProjectRequests } = useProjects(); const project = projects.find(item => item.id === projectId); const { ownProfile } = useSocial(); const owner = project&&projectOwner(project, ownProfile); const own = project?.ownerId === 'self'; const [modal, setModal] = useState(''); const [notice, setNotice] = useState('');
- if(!project)return <EmptyState title="Local project unavailable">This project is absent from this tab, was deleted, or was lost on refresh. <Link href="/projects">Explore projects</Link></EmptyState>;
+ if(!project)return <EmptyState headingLevel={1} title="Local project unavailable">This project is absent from this tab, was deleted, or was lost on refresh. <Link href="/projects">Explore projects</Link></EmptyState>;
  const request = projectRequests.find(item => item.projectId === project.id && item.makerId === 'self' && ['pending', 'accepted'].includes(item.status));
  const accepted = projectRequests.filter(item => item.projectId === project.id && item.status === 'accepted' && !project.team.some(member => member.makerId === item.makerId));
  const team = [...project.team, ...accepted.map(item => ({ makerId: item.makerId, role: project.roles.find(role => role.id === item.roleId)?.title || 'Project collaborator' }))];
