@@ -1,4 +1,4 @@
-# YOUVERSE - W12.1 cross-browser QA checkpoint
+# YOUVERSE - W12.3 premium social UI
 
 Identity-first social website using Next.js 16 App Router, JavaScript/JSX, Bootstrap 5, SCSS and Lucide. Static-first, centralized mock data, lightweight session state.
 
@@ -111,8 +111,17 @@ Do not overwrite an existing remote or force-push.
 W12 fixes include contrast, Feed tab keyboard navigation, repeated Connect tab navigation, Story/notification ARIA, page headings and corrupted shell punctuation. Reusable browser drivers and setup are documented in docs/W12_VERIFICATION.md. No app runtime dependency or backend was added.
 
 
-## W12.1 current verification
+## W12.1 verification checkpoint
 
 **B. AUTOMATED FRONTEND QA PASS — MANUAL SIGN-OFF OPEN.** Chromium 156, Firefox 157 and Windows Playwright WebKit 27.2 run the retained session workflow suite and added nested-dialog/mobile-focus/long-message regressions. The production build and all 73 helper tests pass. Final evidence includes 42 retained workflow groups, 15 added functional groups, 192 axe scans and 99 HTTP checks. Engine-specific limitations, screenshots and open gates are recorded in [W12.1 verification](docs/W12_1_VERIFICATION.md) and [evidence](docs/qa/w12-1/results.json).
 
 Fixed reproduced WebKit button activation/focus restoration, nested-dialog focus loss and focusable offscreen mobile sidebar links. Seven viewport sizes, light/dark, touch flags, CSS reflow equivalents and selected WCAG axe rules are covered. Windows WebKit is not physical Safari/iOS; Firefox touch contexts use a desktop user agent. Native zoom probes did not change zoom. Physical iOS/Android, actual mobile keyboards, manual screen-reader use, native 200%/400% zoom and exhaustive visual review remain OPEN; see the [manual checklist](docs/qa/w12-1/MANUAL_CHECKLIST.md). No full accessibility certification or production/backend readiness is claimed. W13 and Flutter have not started.
+
+
+## W12.3 interface redesign
+
+Plus Jakarta Sans is bundled locally through Next.js font loading with its open-font license and system fallbacks. A shared semantic presentation layer refines light/dark typography, controls, surfaces, grouped desktop navigation, branded mobile header/search, touch navigation, editorial Feed and post variants, Stories/Reels/Explore, Living Identity, projects/Circles, Connect/messages/Premium, composers, activity and Settings. Existing domain state and consent rules are unchanged.
+
+See [W12.3 redesign verification](docs/W12_3_UI_REDESIGN_VERIFICATION.md) for before/after captures, exact verification layers, iteration findings and remaining manual gates. Physical-device, manual screen-reader, native-zoom and exhaustive visual sign-off remain OPEN. No W13/backend, real payments/delivery, new persistence or Flutter work was started.
+
+W12.3 final automated evidence: lint, 73 helper tests and production build pass; 99 HTTP checks, 42 retained workflow groups, 15 additional functional groups, 192 axe scans and 42 local-font/touch/reduced-motion design cases pass across the three available Windows engines. Exact 177-route and viewport/reflow matrices, before/after captures and intermediate observations are in the W12.3 report. Manual physical-device/AT/native-zoom sign-off remains OPEN.

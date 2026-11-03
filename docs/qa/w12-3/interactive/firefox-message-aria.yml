@@ -1,0 +1,34 @@
+- link "Inbox":
+  - /url: /messages
+  - img
+  - text: Inbox
+- link "Ananya Sharma Ananya Sharma Mutual Connect match":
+  - /url: /profile/ananyacreates
+  - text: AS Ananya Sharma Mutual Connect match
+- group:
+  - img
+  - text: Connect safety
+- status
+- button "Unmatch"
+- paragraph: 3 Nov 2026
+- text: Aarav Shah - You
+- paragraph: LongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWordLongWord <>& " 🙂
+- time: 10:20 pm - local only
+- text: Aarav Shah - You
+- paragraph: Short viewport remains usable
+- time: 10:20 pm - local only
+- text: Your message
+- textbox "Your message 0 / 1,500":
+  - /placeholder: Leave a thoughtful hello
+- text: 0 / 1,500
+- button "Add a smile emoji":
+  - img
+- button "Attachment preview":
+  - img
+  - text: Attachment preview
+- button "Send locally" [disabled]:
+  - img
+  - text: Send locally
+- paragraph: Be respectful, unhurried and specific. A mutual match is not permission to share personal details elsewhere.
+- status: Your message was added locally. Nothing was delivered to another person.
+- text: No real-time service, delivery status, read receipts, file upload or durable storage.

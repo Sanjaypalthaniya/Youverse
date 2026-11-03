@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOUVERSE W12.3 — Before / After</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;padding:24px;background:#f7f7fa;color:#242130;font:15px/1.6 system-ui,sans-serif}main{max-width:1600px;margin:auto}h1{font-size:clamp(24px,3vw,38px);letter-spacing:-.04em;margin:0}p{color:#666176;max-width:850px}label{display:flex;gap:12px;align-items:center;margin:24px 0}select{font:inherit;border:1px solid #ccc5db;border-radius:12px;background:white;padding:12px;max-width:100%}section{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0;min-width:0}figcaption{font-weight:700;margin-bottom:10px}img{width:100%;height:auto;display:block;border:1px solid #e7e5ee;border-radius:16px}a{color:#5133c9}a:focus-visible,select:focus-visible{outline:3px solid #5133c9;outline-offset:4px}@media(max-width:700px){section{grid-template-columns:1fr}body{padding:16px}}
+</style>
+<main>
+  <h1>A little more you. Before / after.</h1>
+  <p>Actual Chromium browser captures of the original and redesigned website at matching viewports. These are screenshots, not generated mockups. Physical-device and final manual accessibility sign-off remain open.</p>
+  <label>View <select id="view" aria-label="Compare page"></select></label>
+  <section aria-label="Screenshot comparison">
+    <figure><figcaption>Before</figcaption><a id="before-link"><img id="before" alt="Original page screenshot"></a></figure>
+    <figure><figcaption>After</figcaption><a id="after-link"><img id="after" alt="Redesigned page screenshot"></a></figure>
+  </section>
+  <p><a href="../../W12_3_UI_REDESIGN_VERIFICATION.md">Verification report</a> · <a href="results.json">Detailed results</a></p>
+</main>
+<script>
+  const views=[['feed','Feed · desktop'],['feed-mobile','Feed · mobile'],['explore','Explore'],['profile','Living Identity'],['projects','Projects'],['circle','Circle · mobile'],['connect','Connect · dark'],['premium','Premium'],['messages','Messages · dark mobile'],['create','Create · mobile'],['settings','Settings · dark tablet'],['notifications','Notifications · mobile'],['reels','Reels · dark mobile'],['welcome','Welcome']];
+  const select=document.querySelector('#view');
+  for(const [id,label] of views){const option=document.createElement('option');option.value=id;option.textContent=label;select.append(option);}
+  function render(){for(const phase of ['before','after']){const src=phase+'/'+select.value+'.png';document.getElementById(phase).src=src;document.getElementById(phase).alt=phase+' '+select.selectedOptions[0].textContent;document.getElementById(phase+'-link').href=src;}}
+  select.addEventListener('change',render);render();
+</script>
+</html>
