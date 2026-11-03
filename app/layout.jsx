@@ -1,3 +1,4 @@
+import {DialogFocusTracker} from '../components/ui';
 import './qa.scss';
 import './connect-functionality.scss';
 import './community-session.scss';
@@ -13,4 +14,4 @@ import './account.scss';
 import './session-social.scss';
 import { SocialProvider } from '../components/SocialProvider';
 export const metadata = { title: 'YOUVERSE — A little more you.', description: 'Your people. Your possibilities. A space to become.' };
-export default function RootLayout({ children }) { return <html lang="en" suppressHydrationWarning><body><SocialProvider>{children}</SocialProvider></body></html>; }
+export default function RootLayout({ children }) { return <html lang="en" suppressHydrationWarning><body><SocialProvider><DialogFocusTracker/>{children}</SocialProvider></body></html>; }

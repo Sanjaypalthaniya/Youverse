@@ -1,0 +1,9 @@
+- dialog "Shape your local reflection":
+  - button "Close dialog":
+    - img
+  - heading "Shape your local reflection" [level=2]
+  - text: Text or caption
+  - textbox "Text or caption 39 / 1,500": W12.1 featured nested dialog reflection
+  - text: 39 / 1,500
+  - alert
+  - button "Save local edit"

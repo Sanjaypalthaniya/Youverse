@@ -1,4 +1,4 @@
-# YOUVERSE - W12 QA checkpoint
+# YOUVERSE - W12.1 cross-browser QA checkpoint
 
 Identity-first social website using Next.js 16 App Router, JavaScript/JSX, Bootstrap 5, SCSS and Lucide. Static-first, centralized mock data, lightweight session state.
 
@@ -30,7 +30,7 @@ W07 upgrades `/connect` with Discover/Signals/Incoming/Matches, five intentions,
 
 W08 adds `/premium` with original pricing, comparison, quota usage and confirmed demo switching; a consent-gated `/messages` inbox and `/messages/[makerSlug]` conversations; ten Settings sections; Safety, Help, welcome/login refinement and demo onboarding. Only valid mutual matches expose a local message composer. No accessible conversations are seeded; accept an existing incoming Connect introduction first. Unmatch/block disables sending while existing local history can remain read-only.
 
-W09 adds actual session-only social publishing: reflection/image/question/milestone/project/Circle posts enter the Feed, Stories enter the tray, and Reels enter the vertical view. Preview and explicit confirmation precede publication. Shared likes/comments/bookmarks, hide/undo, own-content text edits/deletion, local detail routes, profile reflections, search and own-action notifications stay synchronized during client navigation. W10 has not started.
+W09 adds actual session-only social publishing: reflection/image/question/milestone/project/Circle posts enter the Feed, Stories enter the tray, and Reels enter the vertical view. Preview and explicit confirmation precede publication. Shared likes/comments/bookmarks, hide/undo, own-content text edits/deletion, local detail routes, profile reflections, search and own-action notifications stay synchronized during client navigation. W10 session identity/project/Circle workflows are implemented below.
 
 Routes: /, /welcome, /login, /explore (supports ?q=...), /reels, /create, /connect, /messages, /notifications, /profile, /profile/edit, the three maker profiles above, /projects, /circles, /settings, /post/1 through /post/6. Invalid sections/posts/maker slugs return 404. Creator links resolve to the matching maker; Project, Circle and Connect workflows remain previews. `/profile` always shows the signed-in demo identity, including when old maker query parameters are present. Public URLs use the canonical slugs, not internal maker IDs.
 
@@ -85,7 +85,7 @@ Free/Plus/Pro simulate 3/15/40 outgoing requests per India-time day, priced at I
 
 W08 messages are outbound, session-only local records. No delivery, read receipt, automated reply, real-time service or attachment upload is simulated. Inbox “New match” means an unvisited valid demo match, not a received message. Old `/messages?maker=...` entry links navigate to canonical conversations after hydration; direct unmatched URLs are locked. Appearance has one root light/dark/system preference using the existing `youverse-theme` storage key. Only appearance persists; messages, plans, preferences and onboarding reset on refresh. Notification/visibility controls are previews, not delivery services or access enforcement. Support forms never send a note or claim delivery.
 
-Local IDs combine a monotonic sequence and tab scope. `/post/local-[sequence]-[scope]` opens a record only in the originating session. A fresh tab/refresh/deleted record shows an honest unavailable presentation, not a fabricated post. Media remains illustrated; Story progress is manual, while Reels playback/audio controls are explicitly simulated. Arrow/Escape controls, comments and next/previous navigation are implemented, but browser interaction testing has not been performed. Comment counts use the actual visible sample comment records plus session comments, rather than the original aggregate mock counts. Saved Feed contains posts; Reel bookmarks are shared state displayed on Reels.
+Local IDs combine a monotonic sequence and tab scope. `/post/local-[sequence]-[scope]` opens a record only in the originating session. A fresh tab/refresh/deleted record shows an honest unavailable presentation, not a fabricated post. Media remains illustrated; Story progress is manual, while Reels playback/audio controls are explicitly simulated. Arrow/Escape controls, comments and next/previous navigation are implemented, and are covered by the W12/W12.1 browser regressions. Comment counts use the actual visible sample comment records plus session comments, rather than the original aggregate mock counts. Saved Feed contains posts; Reel bookmarks are shared state displayed on Reels.
 
 Project Updates require a valid owned/collaborating project. Circle-related posts require joined membership; neither action changes a roadmap, creates a discussion, consumes Connect quota or unlocks messages. Drafts and local records reset on refresh; only the pre-existing appearance preference persists. Publication activity describes only your own local action. Reports and Story replies remain clearly labeled previews.
 
@@ -95,17 +95,24 @@ W10 adds data/communitySession.js, components/CommunityManagement.jsx, app/commu
 
 W11 makes Plus/Pro skill/shared-interest filters, Pro location/available-maker preferences, editable introduction templates and expanded seeded-incoming summaries functional. Priority is local outgoing-list presentation only; Pro badges describe the current session plan. Original prices/caps and mutual-message consent remain unchanged. Settings, requests, usage and messages use the existing canonical root state. The inbox defaults to valid matches and separates read-only histories; read/unread is a personal local reminder, never another person's read receipt. Own Connect action activity uses consent-aware destinations. No backend, payment, delivery or new persistence.
 
-Current W12 verification: lint, **73 helper tests**, production build, **99 HTTP checks**, **14 real Chromium interaction groups**, **200 viewport/theme measurements**, and **62 axe scans** pass. Final valid-route/interaction runs report no console/hydration errors. Five screenshots were reviewed. See [W12 verification](docs/W12_VERIFICATION.md) and its tracked evidence for exact coverage, fixes and limitations. Physical devices, other engines, screen readers and exhaustive zoom/visual checks remain open; the website is not claimed fully verified. W12 final manual sign-off remains open; W13 has not started.
+Historical W12 verification: lint, **73 helper tests**, production build, **99 HTTP checks**, **14 real Chromium interaction groups**, **200 viewport/theme measurements**, and **62 axe scans** pass. Final valid-route/interaction runs report no console/hydration errors. Five screenshots were reviewed. See [W12 verification](docs/W12_VERIFICATION.md) and its tracked evidence for exact coverage, fixes and limitations. Physical devices, other engines, screen readers and exhaustive zoom/visual checks remain open; the website is not claimed fully verified. W12 final manual sign-off remains open; W13 has not started.
 
 ## Backup
 
-No Git remote is configured. After creating your repository, use your actual URL:
+Origin is configured as `https://github.com/Sanjaypalthaniya/Youverse.git`. Preserve history and use a normal push after checking remote state:
 
 ```powershell
-.tools/git/cmd/git.exe remote add origin <YOUR_REPOSITORY_URL>
-.tools/git/cmd/git.exe push -u origin HEAD
+.tools/git/cmd/git.exe fetch origin
+.tools/git/cmd/git.exe push -u origin master
 ```
 
 Do not overwrite an existing remote or force-push.
 
 W12 fixes include contrast, Feed tab keyboard navigation, repeated Connect tab navigation, Story/notification ARIA, page headings and corrupted shell punctuation. Reusable browser drivers and setup are documented in docs/W12_VERIFICATION.md. No app runtime dependency or backend was added.
+
+
+## W12.1 current verification
+
+**B. AUTOMATED FRONTEND QA PASS — MANUAL SIGN-OFF OPEN.** Chromium 156, Firefox 157 and Windows Playwright WebKit 27.2 run the retained session workflow suite and added nested-dialog/mobile-focus/long-message regressions. The production build and all 73 helper tests pass. Final evidence includes 42 retained workflow groups, 15 added functional groups, 192 axe scans and 99 HTTP checks. Engine-specific limitations, screenshots and open gates are recorded in [W12.1 verification](docs/W12_1_VERIFICATION.md) and [evidence](docs/qa/w12-1/results.json).
+
+Fixed reproduced WebKit button activation/focus restoration, nested-dialog focus loss and focusable offscreen mobile sidebar links. Seven viewport sizes, light/dark, touch flags, CSS reflow equivalents and selected WCAG axe rules are covered. Windows WebKit is not physical Safari/iOS; Firefox touch contexts use a desktop user agent. Native zoom probes did not change zoom. Physical iOS/Android, actual mobile keyboards, manual screen-reader use, native 200%/400% zoom and exhaustive visual review remain OPEN; see the [manual checklist](docs/qa/w12-1/MANUAL_CHECKLIST.md). No full accessibility certification or production/backend readiness is claimed. W13 and Flutter have not started.

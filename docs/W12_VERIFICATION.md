@@ -1,5 +1,7 @@
 # W12 verification - 2026-11-02
 
+Continuation: [W12.1 cross-browser verification](W12_1_VERIFICATION.md) extends this historical checkpoint. Final manual sign-off remains OPEN.
+
 ## Verdict
 
 **Core session workflows pass the tested Chromium regression suite after stabilization. Final manual frontend sign-off remains OPEN.** No known critical or high defect remains in the executed scenarios. This is evidence for continuing development planning, not a claim of complete accessibility, every-browser/device coverage or production readiness. W13/backend work has not started.

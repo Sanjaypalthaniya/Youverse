@@ -1,6 +1,8 @@
 'use client';
 import { X } from 'lucide-react';
 import { useEffect, useRef, useId } from 'react';
+let lastActivatedControl=null;
+export function DialogFocusTracker(){useEffect(()=>{function activated(event){const control=event.target.closest?.('button,a[href],input,select,textarea,[tabindex]');if(!control||control.matches(':disabled'))return;lastActivatedControl=control;if(control.tagName==='BUTTON')control.focus({preventScroll:true});}document.addEventListener('click',activated,true);return()=>document.removeEventListener('click',activated,true);},[]);return null;}
 export function Button({ children, variant = 'primary', className = '', ...props }) { return <button className={`yv-button ${variant} ${className}`} {...props}>{children}</button>; }
 export function Card({ children, className = '', ...props }) { return <section className={`yv-card ${className}`} {...props}>{children}</section>; }
 export function Avatar({ name, size = '', color = 'violet', avatarStyle = 'initials' }) { return <span className={`avatar ${size} ${color} avatar-${avatarStyle}`} aria-label={name}>{name.split(' ').map(n => n[0]).slice(0,2).join('')}</span>; }
@@ -11,7 +13,7 @@ export function EmptyState({ title, children, headingLevel=3 }) { const Heading=
 export function LoadingState() { return <div className="loading" role="status">Finding your possibilities…</div>; }
 export function Modal({ title, children, onClose, onKeyDown: onDialogKeyDown }) {
  const dialog = useRef(null);
- useEffect(() => { const previous = document.activeElement; const overflow = document.body.style.overflow; document.body.style.overflow = 'hidden'; dialog.current.querySelector('button')?.focus(); return () => { document.body.style.overflow = overflow; previous?.focus(); }; }, []);
+ useEffect(() => { const active=document.activeElement;const previous=active&&active!==document.body?active:lastActivatedControl;const parentDialog=dialog.current.parentElement?.closest('[role=dialog]'); const overflow = document.body.style.overflow; document.body.style.overflow = 'hidden'; dialog.current.querySelector('button')?.focus(); return () => { document.body.style.overflow = overflow; if(previous?.isConnected&&previous!==document.body)previous.focus({preventScroll:true});else if(parentDialog?.isConnected)parentDialog.querySelector('button:not(:disabled),a[href],input:not(:disabled),textarea:not(:disabled),select:not(:disabled)')?.focus({preventScroll:true}); }; }, []);
  function trapFocus(event) { if(event.key === 'Escape') { event.stopPropagation(); onClose(); return; } if(!event.defaultPrevented) onDialogKeyDown?.(event); if(event.key !== 'Tab') return; const controls = [...dialog.current.querySelectorAll('button,a[href],input,textarea,select,[tabindex="0"]')].filter(control => !control.matches(':disabled') && control.getClientRects().length > 0); const first = controls[0]; const last = controls[controls.length-1]; if(event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); } else if(!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); } }
  return <div className="modal-backdrop-yv" onClick={onClose}><section ref={dialog} className="yv-card dialog" role="dialog" aria-modal="true" aria-label={title} onKeyDown={trapFocus} onClick={e => e.stopPropagation()}><button className="icon-button close-dialog" aria-label="Close dialog" onClick={onClose}><X /></button><h2>{title}</h2>{children}</section></div>;
 }
