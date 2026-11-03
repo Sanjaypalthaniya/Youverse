@@ -1,3 +1,4 @@
+import localFont from 'next/font/local';
 import {DialogFocusTracker} from '../components/ui';
 import './qa.scss';
 import './connect-functionality.scss';
@@ -12,6 +13,8 @@ import './circles.scss';
 import './connect.scss';
 import './account.scss';
 import './session-social.scss';
+import './redesign.scss';
+const jakarta = localFont({src:'./fonts/PlusJakartaSans-Variable.ttf',weight:'200 800',style:'normal',display:'swap',variable:'--font-jakarta',fallback:['Arial','Helvetica','sans-serif']});
 import { SocialProvider } from '../components/SocialProvider';
 export const metadata = { title: 'YOUVERSE — A little more you.', description: 'Your people. Your possibilities. A space to become.' };
-export default function RootLayout({ children }) { return <html lang="en" suppressHydrationWarning><body><SocialProvider><DialogFocusTracker/>{children}</SocialProvider></body></html>; }
+export default function RootLayout({ children }) { return <html lang="en" suppressHydrationWarning><body className={jakarta.variable}><SocialProvider><DialogFocusTracker/>{children}</SocialProvider></body></html>; }
