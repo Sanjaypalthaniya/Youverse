@@ -118,4 +118,4 @@ Follow, project collaboration and Circle membership remain separate from Connect
 
 ## Git handoff
 
-Only W12.1 fixes, drivers, evidence and documentation are included. Implementation hash and verified push are recorded after committing. Origin remains `https://github.com/Sanjaypalthaniya/Youverse.git`; ordinary master push only, no force/reset/clean/history rewrite. Prior W01–W12 commits and evidence remain intact. Browser binaries, dependencies, generated builds and secrets remain ignored.
+Only W12.1 fixes, drivers, evidence and documentation are included. Implementation commit: **`fb951cb58f2dff3fcb2af0eba298be73a1e51090`** (`W12.1: cross-browser QA and dialog/mobile focus stabilization`). A separate documentation checkpoint records this immutable hash. The actual final pushed branch/HEAD is verified and reported in the completion handoff. Origin remains `https://github.com/Sanjaypalthaniya/Youverse.git`; ordinary master push only, no force/reset/clean/history rewrite. Prior W01–W12 commits and evidence remain intact. Browser binaries, dependencies, generated builds and secrets remain ignored.
