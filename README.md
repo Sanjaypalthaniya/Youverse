@@ -133,4 +133,8 @@ See [UI01 roadmap, cleanup and verification](docs/UI01_REDESIGN.md) for scope,
 before/after screenshots and reproducible browser checks.
 
 UI02 adds the compact social Feed, redesigned posts and immersive Stories.
-See [UI02 verification and cleanup](docs/UI02_VERIFICATION.md). UI03 is not started.
+See [UI02 verification and cleanup](docs/UI02_VERIFICATION.md).
+
+UI03 adds the compact mobile header, accessible drawer, adaptive tablet rail and
+refined desktop navigation. See [UI03 verification](docs/UI03_VERIFICATION.md).
+UI04 is not started.

@@ -15,8 +15,10 @@ import './account.scss';
 import './session-social.scss';
 import './redesign.scss';
 import './feed.scss';
+import './shell.scss';
 const inter = localFont({src:'./fonts/Inter-Variable.ttf',weight:'100 900',style:'normal',display:'swap',variable:'--font-inter',fallback:['Arial','Helvetica','sans-serif']});
 const jakarta = localFont({src:'./fonts/PlusJakartaSans-Variable.ttf',weight:'200 800',style:'normal',display:'swap',variable:'--font-jakarta',fallback:['Arial','Helvetica','sans-serif']});
 import { SocialProvider } from '../components/SocialProvider';
+export const viewport = {width:'device-width',initialScale:1,viewportFit:'cover'};
 export const metadata = { title: 'YOUVERSE — A little more you.', description: 'Your people. Your possibilities. A space to become.' };
 export default function RootLayout({ children }) { return <html lang="en" suppressHydrationWarning><body className={`${inter.variable} ${jakarta.variable}`}><SocialProvider><DialogFocusTracker/>{children}</SocialProvider></body></html>; }

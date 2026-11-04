@@ -1,0 +1,192 @@
+[
+  {
+    "name": "/reels",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/post/1",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/post/4",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/profile",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/profile/ananyacreates",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/projects",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/projects/small-beginnings",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/projects/the-little-library",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/circles",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/circles/the-creative-corner",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/circles/the-creative-corner/discussion/creative-noticing",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/notifications",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/onboarding",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/settings/privacy",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/settings/safety",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "Story dialog",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "Connect settings dialog",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "Match celebration dialog",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "Matched conversation composer",
+    "theme": "light",
+    "violations": []
+  },
+  {
+    "name": "/reels",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/post/1",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/post/4",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/profile",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/profile/ananyacreates",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/projects",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/projects/small-beginnings",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/projects/the-little-library",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/circles",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/circles/the-creative-corner",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/circles/the-creative-corner/discussion/creative-noticing",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/notifications",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/onboarding",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/settings/privacy",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "/settings/safety",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "Story dialog",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "Connect settings dialog",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "Match celebration dialog",
+    "theme": "dark",
+    "violations": []
+  },
+  {
+    "name": "Matched conversation composer",
+    "theme": "dark",
+    "violations": []
+  }
+]

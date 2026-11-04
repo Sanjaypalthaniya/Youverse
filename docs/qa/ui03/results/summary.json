@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-04",
+  "baseline": "8289f4fc686afb3ea1bf626db4fbd52c00950d1b",
+  "scope": "UI03 only",
+  "lint": "PASS",
+  "unitTests": {
+    "passed": 73,
+    "failed": 0
+  },
+  "build": "PASS",
+  "ui03Cases": {
+    "chromium": 14,
+    "firefox": 14,
+    "webkit": 14
+  },
+  "nestedRouteChecks": 21,
+  "motionEnabledChecks": 3,
+  "existingWorkflowScenarios": 14,
+  "extendedScenarios": 6,
+  "ui01FoundationCases": 14,
+  "ui02RegressionCases": 14,
+  "routes": 59,
+  "responsiveChecks": 200,
+  "touchChecks": 112,
+  "reflowRecords": 73,
+  "overflow": 0,
+  "accessibility": {
+    "routeScans": 24,
+    "additionalRouteAndDialogScans": 38,
+    "ui03Scans": 24,
+    "extendedScans": 2,
+    "ui02Scans": 4,
+    "total": 92,
+    "violations": 0
+  },
+  "runtimeErrors": 0,
+  "screenshots": {
+    "before": 36,
+    "after": 48
+  },
+  "cleanupAuditEntries": 83,
+  "observations": [
+    "The new modal drawer uses a distinct Close navigation label; two legacy assertions were updated accordingly.",
+    "Drawer scroll restoration is checked using viewport-coordinate touch to avoid Playwright automatic pre-click scrolling.",
+    "Firefox target geometry permits 0.01px rounding tolerance; CSS minimum is still 44px.",
+    "An initial concurrent WebKit history/search run stalled; the complete isolated run passed without further product changes.",
+    "Physical-device, screen-reader and native browser zoom sign-off are not claimed."
+  ]
+}

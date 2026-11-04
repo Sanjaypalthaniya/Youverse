@@ -1,0 +1,257 @@
+{
+  "engine": "webkit",
+  "results": [
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "headerHeight": 57,
+        "feedWidth": 320,
+        "sidebarWidth": 276,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "width": 360,
+        "documentWidth": 360,
+        "headerHeight": 57,
+        "feedWidth": 360,
+        "sidebarWidth": 316,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "headerHeight": 57,
+        "feedWidth": 390,
+        "sidebarWidth": 320,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 430,
+      "height": 932,
+      "metrics": {
+        "width": 430,
+        "documentWidth": 430,
+        "headerHeight": 57,
+        "feedWidth": 430,
+        "sidebarWidth": 320,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "width": 768,
+        "documentWidth": 768,
+        "headerHeight": 64,
+        "feedWidth": 640,
+        "sidebarWidth": 76,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "headerHeight": 64,
+        "feedWidth": 640,
+        "sidebarWidth": 200,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "light",
+      "width": 1440,
+      "height": 1000,
+      "metrics": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "headerHeight": 64,
+        "feedWidth": 640,
+        "sidebarWidth": 224,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "width": 320,
+        "documentWidth": 320,
+        "headerHeight": 57,
+        "feedWidth": 320,
+        "sidebarWidth": 276,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "width": 360,
+        "documentWidth": 360,
+        "headerHeight": 57,
+        "feedWidth": 360,
+        "sidebarWidth": 316,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "width": 390,
+        "documentWidth": 390,
+        "headerHeight": 57,
+        "feedWidth": 390,
+        "sidebarWidth": 320,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 430,
+      "height": 932,
+      "metrics": {
+        "width": 430,
+        "documentWidth": 430,
+        "headerHeight": 57,
+        "feedWidth": 430,
+        "sidebarWidth": 320,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "width": 768,
+        "documentWidth": 768,
+        "headerHeight": 64,
+        "feedWidth": 640,
+        "sidebarWidth": 76,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 1024,
+      "height": 900,
+      "metrics": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "headerHeight": 64,
+        "feedWidth": 640,
+        "sidebarWidth": 200,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "theme": "dark",
+      "width": 1440,
+      "height": 1000,
+      "metrics": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "headerHeight": 64,
+        "feedWidth": 640,
+        "sidebarWidth": 224,
+        "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+        "scrollBehavior": "auto"
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    }
+  ]
+}

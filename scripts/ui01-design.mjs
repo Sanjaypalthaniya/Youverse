@@ -40,7 +40,8 @@ try {
         const box=await locator.boundingBox();assert(box&&box.width>=44&&box.height>=44,`${engine} ${width} ${selector} has a small target: ${JSON.stringify(box)}`);
         controls.push({selector,width:box.width,height:box.height});
       }
-      const search=await page.getByRole('textbox',{name:'Search YOUVERSE'}).boundingBox();assert(search.width>=150);
+      if(await page.getByRole('button',{name:'Toggle search',exact:true}).count())await page.getByRole('button',{name:'Toggle search',exact:true}).click();
+      const search=await page.getByRole('textbox',{name:'Search YOUVERSE'}).boundingBox();assert(search.width>=150);await page.keyboard.press('Escape');
       const create=await page.getByRole('link',{name:'Create reflection',exact:true}).boundingBox();assert(create.width<=46,'Composer icon must not stretch across the card');
     } else if(width===1440) {
       const name=await page.locator('.suggestion>div').first().boundingBox();assert(name.width>=180,'Discovery copy is squeezed');

@@ -1,0 +1,424 @@
+[
+  {
+    "file": "app/globals.scss",
+    "selector": ".sidebar",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": "nav a,.sidebar-bottom>a:not(.signed-user),.sidebar-bottom>button",
+    "retained": [
+      "nav a"
+    ]
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".create-button",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".sidebar-bottom",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".little-note",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".signed-user",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".main-shell",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".topbar-greeting",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".search-box",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".notification-dot",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".daily-card",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".daily-flower",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".project-teaser",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".bottom-nav,.mobile-menu",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".sidebar",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".main-shell",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".topbar-greeting",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".search-box",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".right-rail",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".search-box",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".sidebar",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".main-shell",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".search-box",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".mobile-menu",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".bottom-nav",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".sidebar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": "nav a, .sidebar-bottom>a:not(.signed-user), .sidebar-bottom>button",
+    "retained": [
+      "nav a"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".nav-section-label",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".create-button",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".little-note",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".signed-user",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".main-shell",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".topbar-greeting",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".mobile-brand, .mobile-menu",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".search-box",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail .rail-section",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail h3, .rail-title h3",
+    "retained": [
+      ".rail-title h3"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail .suggestion",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail .connect-person-actions.compact",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".daily-card",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".daily-card .daily-flower",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".daily-card h2",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-teaser",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail footer",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".sidebar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".right-rail",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".topbar-greeting",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".sidebar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".main-shell",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".mobile-menu",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".mobile-brand",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".search-box",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".bottom-nav",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".mobile-brand",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".content-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "property": "--shell-width",
+    "value": "224px"
+  },
+  {
+    "file": "app/redesign.scss",
+    "property": "--shell-width",
+    "value": "210px"
+  },
+  {
+    "file": "app/redesign.scss",
+    "property": "scroll-margin-top",
+    "value": "calc(144px + env(safe-area-inset-top))",
+    "replacement": "calc(var(--shell-header) + 12px)"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".content-grid>main",
+    "retained": []
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".topbar",
+    "retained": []
+  },
+  {
+    "file": "app/qa.scss",
+    "selector": ":root .project-teaser>.yv-badge",
+    "retained": []
+  },
+  {
+    "file": "app/qa.scss",
+    "selector": ".sidebar:not(.is-open)",
+    "retained": []
+  }
+]
