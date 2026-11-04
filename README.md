@@ -125,3 +125,9 @@ Plus Jakarta Sans is bundled locally through Next.js font loading with its open-
 See [W12.3 redesign verification](docs/W12_3_UI_REDESIGN_VERIFICATION.md) for before/after captures, exact verification layers, iteration findings and remaining manual gates. Physical-device, manual screen-reader, native-zoom and exhaustive visual sign-off remain OPEN. No W13/backend, real payments/delivery, new persistence or Flutter work was started.
 
 W12.3 final automated evidence: lint, 73 helper tests and production build pass; 99 HTTP checks, 42 retained workflow groups, 15 additional functional groups, 192 axe scans and 42 local-font/touch/reduced-motion design cases pass across the three available Windows engines. Exact 177-route and viewport/reflow matrices, before/after captures and intermediate observations are in the W12.3 report. Manual physical-device/AT/native-zoom sign-off remains OPEN.
+
+## UI01 design foundations
+
+Inter UI typography, selected Jakarta headings and compact shared cards/controls.
+See [UI01 roadmap, cleanup and verification](docs/UI01_REDESIGN.md) for scope,
+before/after screenshots and reproducible browser checks. UI02 is not started.

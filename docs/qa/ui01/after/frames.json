@@ -1,0 +1,162 @@
+[
+  {
+    "name": "feed",
+    "route": "/",
+    "width": 1440,
+    "height": 1000,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "feed-mobile",
+    "route": "/",
+    "width": 390,
+    "height": 844,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "explore",
+    "route": "/explore",
+    "width": 1440,
+    "height": 1000,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "profile",
+    "route": "/profile",
+    "width": 1440,
+    "height": 1000,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "projects",
+    "route": "/projects",
+    "width": 1440,
+    "height": 1000,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "circle",
+    "route": "/circles/the-creative-corner",
+    "width": 390,
+    "height": 844,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "connect",
+    "route": "/connect",
+    "width": 1440,
+    "height": 1000,
+    "theme": "dark",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "premium",
+    "route": "/premium",
+    "width": 1440,
+    "height": 1000,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "messages",
+    "route": "/messages",
+    "width": 390,
+    "height": 844,
+    "theme": "dark",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "create",
+    "route": "/create",
+    "width": 390,
+    "height": 844,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "settings",
+    "route": "/settings/appearance",
+    "width": 768,
+    "height": 1024,
+    "theme": "dark",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "notifications",
+    "route": "/notifications",
+    "width": 390,
+    "height": 844,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "reels",
+    "route": "/reels",
+    "width": 390,
+    "height": 844,
+    "theme": "dark",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "welcome",
+    "route": "/welcome",
+    "width": 1440,
+    "height": 1000,
+    "theme": "light",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "feed-dark",
+    "route": "/",
+    "width": 1440,
+    "height": 1000,
+    "theme": "dark",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  },
+  {
+    "name": "feed-mobile-dark",
+    "route": "/",
+    "width": 390,
+    "height": 844,
+    "theme": "dark",
+    "errors": [],
+    "external": [],
+    "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif"
+  }
+]

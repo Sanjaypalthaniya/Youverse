@@ -1,0 +1,857 @@
+{
+  "engine": "chromium",
+  "results": [
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 320,
+        "documentWidth": 320,
+        "theme": "light",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 360,
+        "documentWidth": 360,
+        "theme": "light",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 390,
+        "documentWidth": 390,
+        "theme": "light",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 430,
+      "height": 932,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 430,
+        "documentWidth": 430,
+        "theme": "light",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "unloaded"
+          }
+        ],
+        "width": 768,
+        "documentWidth": 768,
+        "theme": "light",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 1024,
+        "documentWidth": 1024,
+        "theme": "light",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "unloaded"
+          }
+        ],
+        "width": 1440,
+        "documentWidth": 1440,
+        "theme": "light",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 320,
+        "documentWidth": 320,
+        "theme": "dark",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 360,
+        "documentWidth": 360,
+        "theme": "dark",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "unloaded"
+          }
+        ],
+        "width": 390,
+        "documentWidth": 390,
+        "theme": "dark",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 430,
+      "height": 932,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 430,
+        "documentWidth": 430,
+        "theme": "dark",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [
+        {
+          "selector": ".mobile-menu",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".bottom-nav a",
+          "width": 48,
+          "height": 55
+        },
+        {
+          "selector": ".post-actions button",
+          "width": 60.625,
+          "height": 44
+        },
+        {
+          "selector": ".post-options .icon-button",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "selector": ".premium-post .follow-button",
+          "width": 69.296875,
+          "height": 44
+        }
+      ],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "unloaded"
+          }
+        ],
+        "width": 768,
+        "documentWidth": 768,
+        "theme": "dark",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "loaded"
+          }
+        ],
+        "width": 1024,
+        "documentWidth": 1024,
+        "theme": "dark",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "metrics": {
+        "font": "inter, \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "faces": [
+          {
+            "family": "inter",
+            "status": "loaded"
+          },
+          {
+            "family": "inter Fallback",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta",
+            "status": "loaded"
+          },
+          {
+            "family": "jakarta Fallback",
+            "status": "unloaded"
+          }
+        ],
+        "width": 1440,
+        "documentWidth": 1440,
+        "theme": "dark",
+        "reducedMotion": true,
+        "controlTransition": "0s"
+      },
+      "fonts": [
+        {
+          "url": "/_next/static/media/PlusJakartaSans_Variable-s.p.0qnuojqj60ziw.ttf",
+          "status": 200
+        },
+        {
+          "url": "/_next/static/media/Inter_Variable-s.p.2la4dbfrngu72.ttf",
+          "status": 200
+        }
+      ],
+      "controls": [],
+      "runtime": [],
+      "external": [],
+      "status": "PASS"
+    }
+  ]
+}

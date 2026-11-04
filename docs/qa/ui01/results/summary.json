@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-04",
+  "baseline": "aeaafe04b9fe8282eaec6c49fe59473951020509",
+  "scope": "UI01 only",
+  "lint": "PASS",
+  "unitTests": {
+    "passed": 73,
+    "failed": 0
+  },
+  "build": "PASS",
+  "routes": 59,
+  "responsiveChecks": 200,
+  "overflow": 0,
+  "accessibilityScans": 62,
+  "accessibilityViolations": 0,
+  "workflowScenarios": 14,
+  "designStates": {
+    "chromium": 14,
+    "firefox": 14,
+    "webkit": 14
+  },
+  "notes": "Production route/axe/design audit and screenshots use the final build. Workflow suite passed before the final desktop menu visibility correction; cross-engine checks cover that correction. Baseline screenshots use the development server."
+}
