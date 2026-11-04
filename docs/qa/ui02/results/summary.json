@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-04",
+  "scope": "UI02 only",
+  "baseline": "1686ab434df741b45bcaf3e3cd746bd6cbca90df",
+  "lint": "PASS",
+  "unitTests": {
+    "passed": 73,
+    "failed": 0
+  },
+  "build": "PASS",
+  "workflowScenarios": 14,
+  "extendedScenarios": 6,
+  "engineCases": {
+    "chromium": 14,
+    "firefox": 14,
+    "webkit": 14
+  },
+  "routes": 59,
+  "responsiveChecks": 200,
+  "touchChecks": 112,
+  "reflowChecks": 73,
+  "accessibility": {
+    "routeScans": 24,
+    "additionalScans": 38,
+    "ui02Scans": 12,
+    "extendedScans": 2,
+    "violations": 0
+  },
+  "runtimeErrors": 0,
+  "cssCleanupEntries": 92,
+  "notes": [
+    "The legacy Story caption selector was retargeted to .story-hint without changing its focus/Escape checks.",
+    "A concurrent 8-second Circle workflow timeout passed in the final sequential workflow run with a 15-second timeout.",
+    "The concurrent route audit stopped reporting progress and was restarted alone with progress logging; all original assertions passed.",
+    "Physical-device, screen-reader and native browser zoom sign-off are not claimed."
+  ]
+}

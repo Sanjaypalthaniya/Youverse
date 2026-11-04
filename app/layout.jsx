@@ -14,6 +14,7 @@ import './connect.scss';
 import './account.scss';
 import './session-social.scss';
 import './redesign.scss';
+import './feed.scss';
 const inter = localFont({src:'./fonts/Inter-Variable.ttf',weight:'100 900',style:'normal',display:'swap',variable:'--font-inter',fallback:['Arial','Helvetica','sans-serif']});
 const jakarta = localFont({src:'./fonts/PlusJakartaSans-Variable.ttf',weight:'200 800',style:'normal',display:'swap',variable:'--font-jakarta',fallback:['Arial','Helvetica','sans-serif']});
 import { SocialProvider } from '../components/SocialProvider';

@@ -1,0 +1,383 @@
+[
+  {
+    "file": "app/globals.scss",
+    "selector": ".stories"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".story"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".story-ring"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".composer"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".feed-tabs"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".tabs"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-person"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-topic"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-text"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-actions"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".stories"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".stories"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".story-ring .avatar"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".feed-tabs>span"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".premium-post"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-text"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-person>div:nth-child(2)"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-person small"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-actions>a"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-actions button,.post-actions a"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-actions"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-topic"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".read-reflection"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-options"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".story-ring.unviewed"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".story-ring.viewed"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".story-progress"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".story-controls"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".reaction-bar"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".dialog:has(.story-progress)"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-person .person-name"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".premium-post .post-person"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".premium-post .post-person small"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".post-person .icon-button"
+  },
+  {
+    "file": "app/social.scss",
+    "selector": ".story-controls"
+  },
+  {
+    "file": "app/session-social.scss",
+    "selector": ".comment-preview"
+  },
+  {
+    "file": "app/session-social.scss",
+    "selector": ".comment-preview b"
+  },
+  {
+    "file": "app/session-social.scss",
+    "selector": ".post-text.local-content-text"
+  },
+  {
+    "file": "app/session-social.scss",
+    "selector": ".post-person small"
+  },
+  {
+    "file": "app/session-social.scss",
+    "selector": ".story-controls"
+  },
+  {
+    "file": "app/session-social.scss",
+    "selector": ".post .options-panel"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".feed-heading h1"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".stories"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story-ring"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story-ring.unviewed"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story-ring.own"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".composer"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".feed-tabs"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".tabs"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".premium-post"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-person"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-topic"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-text"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".read-reflection"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-actions"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".comment-preview"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".dialog:has(.story-progress)"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story-progress"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story-identity, .story-identity small, .story-controls"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story-keyboard-region>.muted"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".stories"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".story-ring .avatar"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".composer"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".feed-tabs"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".tabs"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".premium-post"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-person"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-text"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-actions"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".premium-post"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".post-person"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".feed-tabs .text-action"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".tabs"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".composer"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".composer>.avatar"
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".premium-post .post-person .icon-button"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".compose-icon",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-art",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".art-sun",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".art-book",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".art-coffee",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".art-plant",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".art-caption",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-bottom",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-art",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".art-book",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".art-coffee",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".post-bottom>span:last-child",
+    "reason": "No component or dynamic class references; superseded by shared Artwork"
+  },
+  {
+    "file": "app/qa.scss",
+    "selector": ".post-actions button (coarse pointer branch)",
+    "reason": "44px targets now owned unconditionally by feed.scss; other shared targets retained"
+  }
+]

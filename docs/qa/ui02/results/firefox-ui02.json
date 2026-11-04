@@ -1,0 +1,313 @@
+{
+  "engine": "firefox",
+  "results": [
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "width": 320,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 318,
+        "scrollWidth": 318,
+        "height": 568,
+        "stageHeight": 275.45001220703125,
+        "artworkHeight": 275.45001220703125
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "width": 360,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 358,
+        "scrollWidth": 358,
+        "height": 800,
+        "stageHeight": 507.45001220703125,
+        "artworkHeight": 507.45001220703125
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "width": 390,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 388,
+        "scrollWidth": 388,
+        "height": 844,
+        "stageHeight": 551.4500122070312,
+        "artworkHeight": 551.4500122070312
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 430,
+      "height": 932,
+      "metrics": {
+        "width": 430,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 428,
+        "scrollWidth": 428,
+        "height": 932,
+        "stageHeight": 639.4500122070312,
+        "artworkHeight": 639.4500122070312
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "width": 514,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 438,
+        "scrollWidth": 438,
+        "height": 700.5499877929688,
+        "stageHeight": 400,
+        "artworkHeight": 400
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "width": 748,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 438,
+        "scrollWidth": 438,
+        "height": 607.75,
+        "stageHeight": 307.20001220703125,
+        "artworkHeight": 307.20001220703125
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 1440,
+      "height": 1000,
+      "metrics": {
+        "width": 640,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 438,
+        "scrollWidth": 438,
+        "height": 700.5499877929688,
+        "stageHeight": 400,
+        "artworkHeight": 400
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "metrics": {
+        "width": 320,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 318,
+        "scrollWidth": 318,
+        "height": 568,
+        "stageHeight": 275.45001220703125,
+        "artworkHeight": 275.45001220703125
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "metrics": {
+        "width": 360,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 358,
+        "scrollWidth": 358,
+        "height": 800,
+        "stageHeight": 507.45001220703125,
+        "artworkHeight": 507.45001220703125
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "metrics": {
+        "width": 390,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 388,
+        "scrollWidth": 388,
+        "height": 844,
+        "stageHeight": 551.4500122070312,
+        "artworkHeight": 551.4500122070312
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 430,
+      "height": 932,
+      "metrics": {
+        "width": 430,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 428,
+        "scrollWidth": 428,
+        "height": 932,
+        "stageHeight": 639.4500122070312,
+        "artworkHeight": 639.4500122070312
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "metrics": {
+        "width": 514,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 438,
+        "scrollWidth": 438,
+        "height": 700.5499877929688,
+        "stageHeight": 400,
+        "artworkHeight": 400
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "metrics": {
+        "width": 748,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 438,
+        "scrollWidth": 438,
+        "height": 607.75,
+        "stageHeight": 307.20001220703125,
+        "artworkHeight": 307.20001220703125
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 1440,
+      "height": 1000,
+      "metrics": {
+        "width": 640,
+        "textSize": 15,
+        "font": "\"inter\", \"inter Fallback\", Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif",
+        "overflow": false
+      },
+      "storyMetrics": {
+        "width": 438,
+        "scrollWidth": 438,
+        "height": 700.5499877929688,
+        "stageHeight": 400,
+        "artworkHeight": 400
+      },
+      "violations": [],
+      "errors": [],
+      "status": "PASS"
+    }
+  ]
+}
