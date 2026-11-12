@@ -1,0 +1,521 @@
+[
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-hero",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-search",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-search-form",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".search-suggestions",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".recent-searches",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-section",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-grid",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-card",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-symbol",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".suggested-search-card",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-disclaimer",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-hero",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-search-form",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-grid",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-card",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-grid",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-hero .hero-footnote",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".search-suggestions button",
+    "retained": []
+  },
+  {
+    "file": "app/discovery.scss",
+    "selector": ".discovery-search-form>.icon-button",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-hero",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-cover",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".cover-orbit",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".cover-flower",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".cover-note",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-intro",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-handle",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-craft",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-location",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-action-row",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-safety",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-completion",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-tabs",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-two-column",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-intentions",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-highlights",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-section",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-timeline",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-projects",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-project-art",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".profile-shared",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".profile-shared",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-related",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".maker-identity-card",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-memberships",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-people",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".dialog:has(.identity-hero)",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".dialog .identity-intro",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".dialog .identity-cover",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".dialog .identity-intro h1",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-cover",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-intro",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-completion",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-tabs",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-two-column",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-related",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-safety>div",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-two-column,.identity-projects,.identity-related,.identity-form-grid",
+    "retained": [
+      ".identity-form-grid"
+    ]
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-action-row",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-intro .identity-kicker",
+    "retained": []
+  },
+  {
+    "file": "app/identity.scss",
+    "selector": ".identity-hero .yv-button",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ":is(.discovery-hero,.projects-hero,.circles-hero,.connect-hero,.account-hero)",
+    "retained": [
+      ":is(.projects-hero,.circles-hero,.connect-hero,.account-hero)"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discovery-hero>svg, .account-hero>svg",
+    "retained": [
+      ".account-hero>svg"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discovery-search-form",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".recent-searches",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discovery-grid, .project-grid, .circle-grid",
+    "retained": [
+      ".project-grid",
+      ".circle-grid"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discovery-card",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discovery-symbol",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".suggested-search-card h2, .composer-preview h2",
+    "retained": [
+      ".composer-preview h2"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".search-suggestions",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-hero, .project-detail-hero, .circle-detail-hero",
+    "retained": [
+      ".project-detail-hero",
+      ".circle-detail-hero"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-cover",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".cover-note",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-intro",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-handle, .identity-location",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-craft",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-action-row a, .identity-action-row .identity-share",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-completion",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-tabs",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-two-column h2",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-intentions",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-timeline",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-highlights li, .identity-intentions ul li",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".profile-shared",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".maker-identity-card",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ":is(.project-card,.circle-card,.discovery-card,.connect-maker-card):hover",
+    "retained": [
+      ":is(.project-card,.circle-card,.connect-maker-card):hover"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".options-panel, .identity-safety>div",
+    "retained": [
+      ".options-panel"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ":is(.discovery-hero,.projects-hero,.circles-hero,.connect-hero,.account-hero)",
+    "retained": [
+      ":is(.projects-hero,.circles-hero,.connect-hero,.account-hero)"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discovery-search-form",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discovery-grid, .project-grid, .circle-grid",
+    "retained": [
+      ".project-grid",
+      ".circle-grid"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-cover",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-intro",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-completion",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-tabs button",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".identity-completion",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".follow-button, .icon-button, .identity-chip-editor .editable-chips button, .draft-status button, .recent-searches button, .interest-filters button",
+    "retained": [
+      ".follow-button",
+      ".icon-button",
+      ".identity-chip-editor .editable-chips button",
+      ".draft-status button",
+      ".interest-filters button"
+    ]
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".profile-cover",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".profile-card",
+    "retained": []
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".explore-hero",
+    "retained": []
+  }
+]

@@ -137,4 +137,5 @@ See [UI02 verification and cleanup](docs/UI02_VERIFICATION.md).
 
 UI03 adds the compact mobile header, accessible drawer, adaptive tablet rail and
 refined desktop navigation. See [UI03 verification](docs/UI03_VERIFICATION.md).
-UI04 is not started.
+UI04 adds compact Explore/Search results and redesigned Living Identity profiles.
+See [UI04 verification and cleanup](docs/UI04_VERIFICATION.md). UI05 is not started.

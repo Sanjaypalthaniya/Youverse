@@ -1,0 +1,59 @@
+{
+  "phase": "UI04",
+  "finalized": "2026-11-12",
+  "timezone": "Asia/Calcutta",
+  "baseline": "0e1891ef4954b93ed3ed04e02531181e4a7f87c8",
+  "lint": "PASS",
+  "tests": {
+    "passed": 73,
+    "total": 73
+  },
+  "build": {
+    "status": "PASS",
+    "staticOutputs": 62
+  },
+  "ui04": {
+    "cases": 42,
+    "engines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "widths": [
+      320,
+      360,
+      390,
+      430,
+      768,
+      1024,
+      1440
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ]
+  },
+  "regressions": {
+    "workflows": 14,
+    "extended": 6,
+    "ui01": 14,
+    "ui02": 14,
+    "ui03": 14
+  },
+  "routes": 59,
+  "responsive": 200,
+  "touch": 112,
+  "reflow": 73,
+  "accessibility": {
+    "scans": 106,
+    "violations": 0
+  },
+  "runtimeErrors": 0,
+  "cleanupAuditEntries": 98,
+  "screenshots": {
+    "before": 56,
+    "after": 62
+  },
+  "physicalDeviceTesting": false,
+  "nextPhaseStarted": false
+}

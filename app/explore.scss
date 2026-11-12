@@ -1,0 +1,577 @@
+/* UI04 Explore/search owner. Shared filters remain available to later phases. */
+.explore-screen {
+  min-width: 0;
+  .discovery-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin: 0 0 18px;
+    background: none;
+    border: 0;
+    padding: 0;
+    .eyebrow {
+      font-size: 9px;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+    }
+    h1 {
+      font-family: var(--font-jakarta), sans-serif;
+      font-size: 26px;
+      letter-spacing: -0.04em;
+      line-height: 1.25;
+      margin: 5px 0 7px;
+      span {
+        color: var(--primary);
+      }
+    }
+    p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+    > svg {
+      color: var(--primary);
+      flex-shrink: 0;
+      opacity: 0.65;
+    }
+  }
+  .choice-tabs {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin: 12px 0 10px;
+    padding: 0;
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    background: none;
+    scrollbar-width: thin;
+    button {
+      position: relative;
+      flex-shrink: 0;
+      min-height: 46px;
+      padding: 10px 2px;
+      border: 0;
+      border-radius: 0;
+      background: none;
+      font-size: 13px;
+      font-weight: 500;
+      box-shadow: none;
+      transition: color 0.16s ease;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        border-radius: 4px;
+        background: var(--primary);
+        transform: scaleX(0);
+        transition: transform 0.18s ease;
+      }
+      &[aria-pressed="true"] {
+        background: none;
+        box-shadow: none;
+        color: var(--accent-text);
+        font-weight: 700;
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+      &:focus-visible {
+        outline-offset: -3px;
+      }
+      min-width: 44px;
+    }
+  }
+  > .interest-filters,
+  .suggested-search-card .interest-filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 7px;
+    margin: 10px 0 18px;
+    padding: 2px;
+    scrollbar-width: thin;
+    button {
+      flex-shrink: 0;
+      min-height: 44px;
+      font-size: 11px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--surface);
+      &[aria-pressed="true"] {
+        background: var(--soft);
+        color: var(--accent-text);
+        border-color: var(--primary);
+      }
+      &:active {
+        box-shadow: none;
+      }
+      &:focus-visible {
+        outline-offset: -3px;
+      }
+    }
+  }
+  .section-heading {
+    gap: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+    h2 {
+      font-size: 17px;
+      line-height: 1.4;
+      letter-spacing: -0.025em;
+    }
+    p {
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 4px;
+    }
+    button {
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+    > span {
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+  }
+  .empty {
+    padding: 26px 18px;
+    background: var(--soft);
+    border: 0;
+    h3 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 1.7;
+    }
+  }
+  .yv-button:hover {
+    transform: none;
+  }
+}
+.discovery-search {
+  position: relative;
+  z-index: 15;
+  margin-bottom: 8px;
+}
+.discovery-search-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 58px;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  &:focus-within {
+    border-color: var(--primary);
+  }
+  > .icon-button {
+    flex-shrink: 0;
+  }
+  input {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    min-height: 44px;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+    font-size: 14px;
+  }
+  .yv-button {
+    flex-shrink: 0;
+    min-height: 44px;
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 340px;
+  overflow: auto;
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-float);
+  padding: 12px;
+  .eyebrow {
+    font-size: 9px;
+    margin: 4px 8px;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    width: 100%;
+    padding: 9px 8px;
+    border: 0;
+    border-radius: 8px;
+    background: none;
+    color: var(--text);
+    font-size: 13px;
+    text-align: left;
+    overflow-wrap: anywhere;
+    svg {
+      flex-shrink: 0;
+    }
+    svg:last-child {
+      margin-left: auto;
+    }
+    &:hover {
+      background: var(--soft);
+    }
+  }
+  .close-suggestions {
+    font-size: 11px;
+    color: var(--accent-text);
+  }
+}
+.recent-searches {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 30px;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 6px 0 10px;
+  small {
+    font-size: 11px;
+  }
+  button {
+    min-height: 44px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--muted);
+    padding: 7px 10px;
+    font-size: 11px;
+    &:hover {
+      background: var(--soft);
+      color: var(--accent-text);
+    }
+  }
+}
+.discovery-section {
+  margin: 24px 0;
+}
+.discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 14px;
+  > .yv-card {
+    margin-bottom: 0;
+    min-width: 0;
+  }
+  > .premium-post {
+    grid-column: 1/-1;
+  }
+}
+.discovery-grid .discovery-card:not(.person-card) {
+  padding: 0;
+  border: 0;
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  transition: box-shadow 0.18s ease;
+  &:active {
+    box-shadow: none;
+  }
+}
+.discovery-card-body {
+  padding: 14px;
+  min-width: 0;
+  h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+    margin: 6px 0 8px;
+  }
+  .discovery-description {
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--muted);
+    margin: 0 0 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+  small {
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+  .tag-row {
+    gap: 5px;
+    margin: 10px 0;
+    .yv-badge {
+      font-size: 10px;
+      padding: 3px 7px;
+    }
+  }
+  .discovery-link {
+    font-size: 11px;
+    min-height: 44px;
+    margin-top: 6px;
+  }
+}
+.discovery-kind {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.discovery-cover {
+  display: block;
+  overflow: hidden;
+  .project-cover {
+    border-radius: 0;
+    min-height: 150px;
+    height: 150px;
+    padding: 16px;
+    strong {
+      font-family: var(--font-jakarta), sans-serif;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+      line-height: 1.3;
+    }
+    small {
+      font-size: 8px;
+    }
+    div > span {
+      font-size: 10px;
+    }
+    > svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+.discovery-owner {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  font-size: 11px;
+  .avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 9px;
+  }
+}
+.discovery-skills,
+.discovery-count {
+  display: block;
+}
+.discovery-count {
+  margin: 10px 0;
+}
+.discovery-tile-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .project-star {
+    min-height: 44px;
+  }
+}
+.discovery-card-body .project-progress {
+  padding: 12px 0;
+  font-size: 11px;
+  small {
+    font-size: 10px;
+  }
+  progress {
+    height: 5px;
+  }
+}
+.discovery-reel-cover {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  .social-art {
+    height: 230px;
+    min-height: 230px;
+    border-radius: 0;
+    padding: 18px;
+    .art-paper {
+      width: 90%;
+      padding: 20px 16px;
+      gap: 12px;
+      strong {
+        font-size: 22px;
+      }
+      small {
+        font-size: 8px;
+      }
+      span {
+        font-size: 9px;
+      }
+    }
+  }
+}
+.discovery-play {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #21172ed9;
+  color: #fff;
+}
+.suggested-search-card {
+  background: var(--soft);
+  border: 0;
+  padding: 20px;
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 13px;
+    color: var(--muted);
+  }
+}
+.discovery-disclaimer {
+  margin-top: 20px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+@media (hover: hover) {
+  .discovery-grid .discovery-card:not(.person-card):hover {
+    box-shadow: 0 5px 18px -9px #5133c940;
+  }
+}
+@media (max-width: 700px) {
+  .explore-screen .discovery-hero {
+    h1 {
+      font-size: 23px;
+    }
+    p {
+      font-size: 12px;
+    }
+    > svg {
+      display: none;
+    }
+  }
+  .discovery-search-form input {
+    font-size: 16px;
+  }
+  .explore-screen .choice-tabs {
+    gap: 18px;
+    margin-inline: -16px;
+    padding-inline: 16px;
+    button {
+      font-size: 12px;
+    }
+  }
+  .explore-screen > .interest-filters {
+    margin-inline: -16px;
+    padding-inline: 16px;
+  }
+  .explore-screen .section-heading h2 {
+    font-size: 16px;
+  }
+  .discovery-grid {
+    gap: 12px;
+  }
+  .discovery-section .discovery-grid[data-category="People"] {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 230px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+    padding: 0 16px 12px;
+    margin-inline: -16px;
+    scrollbar-width: thin;
+    > .person-card {
+      scroll-snap-align: start;
+    }
+  }
+  .discovery-grid:not([data-category="People"]) {
+    grid-template-columns: 1fr;
+  }
+  .discovery-grid[data-category="People"] {
+    grid-template-columns: 1fr;
+  }
+  .discovery-grid[data-category="Reels"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .discovery-card-body {
+      padding: 12px;
+      h3 {
+        font-size: 14px;
+      }
+    }
+    .discovery-reel-cover .social-art {
+      height: 200px;
+      min-height: 200px;
+      padding: 10px;
+      .art-paper {
+        padding: 16px 10px;
+        strong {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .discovery-cover .project-cover {
+    min-height: 160px;
+    height: 160px;
+  }
+  .discovery-card-body {
+    padding: 16px;
+  }
+}
+@media (max-width: 360px) {
+  .explore-screen .choice-tabs {
+    margin-inline: -12px;
+    padding-inline: 12px;
+  }
+  .explore-screen > .interest-filters {
+    margin-inline: -12px;
+    padding-inline: 12px;
+  }
+  .discovery-section .discovery-grid[data-category="People"] {
+    margin-inline: -12px;
+    padding-inline: 12px;
+  }
+  .discovery-search-form {
+    gap: 4px;
+    padding: 6px;
+    .yv-button {
+      padding-inline: 10px;
+      font-size: 11px;
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .explore-screen .choice-tabs button,
+  .explore-screen .choice-tabs button::after,
+  .discovery-grid .discovery-card {
+    transition: none;
+  }
+  .discovery-section .discovery-grid[data-category="People"] {
+    scroll-snap-type: none;
+  }
+}
+
+.discovery-section .discovery-grid[data-category="People"] {
+  align-items: stretch;
+}

@@ -1,0 +1,357 @@
+{
+  "engine": "firefox",
+  "results": [
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 320,
+      "height": 700,
+      "exploreMetrics": {
+        "width": 320,
+        "documentWidth": 320
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 320,
+        "documentWidth": 320
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "exploreMetrics": {
+        "width": 360,
+        "documentWidth": 360
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 360,
+        "documentWidth": 360
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "exploreMetrics": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "scans": [
+        {
+          "screen": "Explore",
+          "violations": []
+        },
+        {
+          "screen": "Public profile",
+          "violations": []
+        },
+        {
+          "screen": "Own profile",
+          "violations": []
+        }
+      ],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 430,
+      "height": 932,
+      "exploreMetrics": {
+        "width": 430,
+        "documentWidth": 430
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 430,
+        "documentWidth": 430
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "exploreMetrics": {
+        "width": 768,
+        "documentWidth": 768
+      },
+      "publicMetrics": {
+        "h1": 27,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 768,
+        "documentWidth": 768
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 1024,
+      "height": 900,
+      "exploreMetrics": {
+        "width": 1024,
+        "documentWidth": 1024
+      },
+      "publicMetrics": {
+        "h1": 27,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 1024,
+        "documentWidth": 1024
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 1440,
+      "height": 1000,
+      "exploreMetrics": {
+        "width": 1440,
+        "documentWidth": 1440
+      },
+      "publicMetrics": {
+        "h1": 27,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 1440,
+        "documentWidth": 1440
+      },
+      "scans": [
+        {
+          "screen": "Explore",
+          "violations": []
+        },
+        {
+          "screen": "Own profile",
+          "violations": []
+        }
+      ],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 320,
+      "height": 700,
+      "exploreMetrics": {
+        "width": 320,
+        "documentWidth": 320
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 320,
+        "documentWidth": 320
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "exploreMetrics": {
+        "width": 360,
+        "documentWidth": 360
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 360,
+        "documentWidth": 360
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "exploreMetrics": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "scans": [
+        {
+          "screen": "Explore",
+          "violations": []
+        },
+        {
+          "screen": "Public profile",
+          "violations": []
+        },
+        {
+          "screen": "Own profile",
+          "violations": []
+        }
+      ],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 430,
+      "height": 932,
+      "exploreMetrics": {
+        "width": 430,
+        "documentWidth": 430
+      },
+      "publicMetrics": {
+        "h1": 24,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 430,
+        "documentWidth": 430
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "exploreMetrics": {
+        "width": 768,
+        "documentWidth": 768
+      },
+      "publicMetrics": {
+        "h1": 27,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 768,
+        "documentWidth": 768
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 1024,
+      "height": 900,
+      "exploreMetrics": {
+        "width": 1024,
+        "documentWidth": 1024
+      },
+      "publicMetrics": {
+        "h1": 27,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 1024,
+        "documentWidth": 1024
+      },
+      "scans": [],
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 1440,
+      "height": 1000,
+      "exploreMetrics": {
+        "width": 1440,
+        "documentWidth": 1440
+      },
+      "publicMetrics": {
+        "h1": 27,
+        "bio": 14,
+        "cover": "identity-cover cover-coral"
+      },
+      "ownMetrics": {
+        "width": 1440,
+        "documentWidth": 1440
+      },
+      "scans": [
+        {
+          "screen": "Explore",
+          "violations": []
+        },
+        {
+          "screen": "Own profile",
+          "violations": []
+        }
+      ],
+      "errors": [],
+      "status": "PASS"
+    }
+  ]
+}

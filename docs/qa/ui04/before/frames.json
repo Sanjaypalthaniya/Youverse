@@ -1,0 +1,150 @@
+[
+  {
+    "width": 320,
+    "height": 700,
+    "theme": "light",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "theme": "light",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "theme": "light",
+    "routes": [
+      "/explore",
+      "/profile",
+      "/explore?q=Creativity",
+      "/profile/ananyacreates"
+    ],
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "theme": "light",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "theme": "light",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "theme": "light",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "theme": "light",
+    "routes": [
+      "/explore",
+      "/profile",
+      "/explore?q=Creativity",
+      "/profile/ananyacreates"
+    ],
+    "errors": []
+  },
+  {
+    "width": 320,
+    "height": 700,
+    "theme": "dark",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "theme": "dark",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "theme": "dark",
+    "routes": [
+      "/explore",
+      "/profile",
+      "/explore?q=Creativity",
+      "/profile/ananyacreates"
+    ],
+    "errors": []
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "theme": "dark",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "theme": "dark",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "theme": "dark",
+    "routes": [
+      "/explore",
+      "/profile"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "theme": "dark",
+    "routes": [
+      "/explore",
+      "/profile",
+      "/explore?q=Creativity",
+      "/profile/ananyacreates"
+    ],
+    "errors": []
+  }
+]

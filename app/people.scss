@@ -1,0 +1,196 @@
+/* Reusable UI04 people tiles: Explore, related profiles and relationship dialogs. */
+.person-card {
+  flex-direction: column;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-card);
+  margin: 0;
+  min-width: 0;
+  box-shadow: var(--shadow-card);
+  background: var(--surface);
+  transition: box-shadow 0.18s ease;
+  .person-card-cover {
+    position: relative;
+    height: 54px;
+    overflow: hidden;
+    background-image:
+      radial-gradient(circle at 75% -50%, #fff8 0 42%, transparent 43%),
+      linear-gradient(
+        115deg,
+        var(--person-tone-a, #e0d5fb),
+        var(--person-tone-b, #b8a4ed)
+      );
+    &.cover-coral {
+      --person-tone-a: #ffe0d1;
+      --person-tone-b: #efa5ad;
+    }
+    &.cover-green {
+      --person-tone-a: #e6efc5;
+      --person-tone-b: #adc8a3;
+    }
+    span {
+      position: absolute;
+      right: 16px;
+      top: -22px;
+      font-size: 85px;
+      opacity: 0.35;
+      transform: rotate(15deg);
+    }
+  }
+  .person-card-body {
+    padding: 0 16px 14px;
+    flex: 1;
+  }
+  .person-card-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: -24px;
+    position: relative;
+    .avatar {
+      width: 52px;
+      height: 52px;
+      border: 3px solid var(--surface);
+      font-size: 15px;
+    }
+    .follow-button {
+      min-height: 44px;
+      margin-top: 26px;
+      padding: 7px 10px;
+      font-size: 11px;
+    }
+  }
+  h3 {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 8px 0 3px;
+    letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
+  }
+  .person-card-name p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .person-card-bio {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .person-common {
+    display: flex;
+    gap: 6px;
+    align-items: start;
+    color: var(--accent-text);
+    small {
+      font-size: 11px;
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+  }
+  .tag-row {
+    margin: 8px 0 0;
+    gap: 5px;
+    .yv-badge {
+      font-size: 10px;
+      padding: 3px 7px;
+      line-height: 1.5;
+    }
+  }
+  .discovery-link {
+    min-height: 44px;
+    font-size: 11px;
+    margin-top: 4px;
+    gap: 5px;
+  }
+  .connect-person-actions {
+    margin: 0;
+    .yv-button {
+      min-height: 44px;
+      font-size: 11px;
+      padding: 8px 10px;
+      max-width: 100%;
+      white-space: normal;
+    }
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+@media (hover: hover) {
+  .person-card:hover {
+    box-shadow: 0 5px 18px -9px #5133c940;
+  }
+}
+.dialog .person-card {
+  margin-bottom: 12px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .person-card {
+    transition: none;
+  }
+}
+
+.person-card-footer {
+  margin-top: 4px;
+}
+.person-card-result {
+  grid-column: 1 / -1;
+  .person-card-body {
+    padding: 14px 16px;
+  }
+  .person-card-header {
+    margin-top: 0;
+    align-items: center;
+    .avatar {
+      width: 44px;
+      height: 44px;
+      font-size: 13px;
+    }
+    .follow-button {
+      margin-top: 0;
+      flex-shrink: 0;
+    }
+    .person-card-name {
+      flex: 1;
+      min-width: 0;
+      h3 {
+        margin: 0;
+        font-size: 14px;
+      }
+      p {
+        margin: 3px 0 0;
+      }
+    }
+  }
+  .person-card-bio {
+    margin: 10px 0 6px;
+    -webkit-line-clamp: 1;
+  }
+  .person-common small {
+    -webkit-line-clamp: 1;
+  }
+  .person-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+}
