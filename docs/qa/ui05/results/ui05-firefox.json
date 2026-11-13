@@ -1,0 +1,2561 @@
+{
+  "engine": "firefox",
+  "results": [
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 320,
+      "height": 700,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 272,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 127,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 127,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 312,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 147,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 147,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 334,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 158,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 158,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [
+        {
+          "name": "/projects",
+          "violations": []
+        },
+        {
+          "name": "/circles",
+          "violations": []
+        },
+        {
+          "name": "/connect",
+          "violations": []
+        },
+        {
+          "name": "/messages",
+          "violations": []
+        },
+        {
+          "name": "project-detail",
+          "violations": []
+        },
+        {
+          "name": "membership-dialog",
+          "violations": []
+        },
+        {
+          "name": "locked-conversation",
+          "violations": []
+        },
+        {
+          "name": "enabled-discovery",
+          "violations": []
+        },
+        {
+          "name": "mutual-chat",
+          "violations": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 374,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 178,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 178,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 608,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 308,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 308,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 1024,
+      "height": 900,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 608,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 366,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 366,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "light",
+      "width": 1440,
+      "height": 1000,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 608,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 113,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 113,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [
+        {
+          "name": "/projects",
+          "violations": []
+        },
+        {
+          "name": "/circles",
+          "violations": []
+        },
+        {
+          "name": "/connect",
+          "violations": []
+        },
+        {
+          "name": "/messages",
+          "violations": []
+        },
+        {
+          "name": "mutual-chat",
+          "violations": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 320,
+      "height": 700,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 130,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 272,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 320,
+          "documentWidth": 320,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 127,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 127,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 150,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 312,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 360,
+          "documentWidth": 360,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 147,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 147,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 161,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 334,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 390,
+          "documentWidth": 390,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 158,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 158,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [
+        {
+          "name": "/projects",
+          "violations": []
+        },
+        {
+          "name": "/circles",
+          "violations": []
+        },
+        {
+          "name": "/connect",
+          "violations": []
+        },
+        {
+          "name": "/messages",
+          "violations": []
+        },
+        {
+          "name": "project-detail",
+          "violations": []
+        },
+        {
+          "name": "membership-dialog",
+          "violations": []
+        },
+        {
+          "name": "locked-conversation",
+          "violations": []
+        },
+        {
+          "name": "enabled-discovery",
+          "violations": []
+        },
+        {
+          "name": "mutual-chat",
+          "violations": []
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 430,
+      "height": 932,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 181,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 374,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.6999969482422
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 430,
+          "documentWidth": 430,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 178,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 178,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 608,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 768,
+          "documentWidth": 768,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 308,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 308,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 1024,
+      "height": 900,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 608,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 1024,
+          "documentWidth": 1024,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 366,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 366,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "theme": "dark",
+      "width": 1440,
+      "height": 1000,
+      "status": "PASS",
+      "metrics": [
+        {
+          "route": "/projects",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".feature-screen select",
+              "width": 143,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            },
+            {
+              "selector": ".project-star",
+              "width": 116.86666870117188,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/circles",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".feature-screen select",
+              "width": 608,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 115.80000305175781,
+              "height": 44
+            },
+            {
+              "selector": ".circle-join",
+              "width": 93.44999694824219,
+              "height": 44
+            }
+          ]
+        },
+        {
+          "route": "/connect",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".connect-toggle",
+              "width": 145.5,
+              "height": 44
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            },
+            {
+              "selector": ".connect-intention",
+              "width": 146,
+              "height": 132.70001220703125
+            }
+          ]
+        },
+        {
+          "route": "/messages",
+          "width": 1440,
+          "documentWidth": 1440,
+          "targets": [
+            {
+              "selector": ".message-list-tabs button",
+              "width": 113,
+              "height": 44
+            },
+            {
+              "selector": ".message-list-tabs button",
+              "width": 113,
+              "height": 44
+            }
+          ]
+        }
+      ],
+      "scans": [
+        {
+          "name": "/projects",
+          "violations": []
+        },
+        {
+          "name": "/circles",
+          "violations": []
+        },
+        {
+          "name": "/connect",
+          "violations": []
+        },
+        {
+          "name": "/messages",
+          "violations": []
+        },
+        {
+          "name": "mutual-chat",
+          "violations": []
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "motion": {
+    "status": "PASS",
+    "starAnimation": "project-star-pop"
+  }
+}

@@ -1,0 +1,945 @@
+[
+  {
+    "file": "app/redesign.scss",
+    "selector": ":is(.projects-hero,.circles-hero,.connect-hero,.account-hero)",
+    "retained": [
+      ":is(.account-hero)"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-grid, .circle-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-detail-hero, .circle-detail-hero",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-card, .circle-card",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-cover",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ":is(.project-card,.circle-card,.connect-maker-card):hover",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-cover",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-card-meta>span:last-child, .project-card-bottom>span, .project-creator, .project-creator small, .project-creator time, .project-skills, .circle-statline",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-progress",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-star, .circle-join",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-detail-intro, .circle-detail-intro",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-roadmap ol",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-collaboration, .circle-compose-entry",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-collaboration :is(p,small), .project-collaboration .needed-role p, .project-team-member small",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-activity",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-reference, .circle-reference",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discussion-card",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discussion-detail h1",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discussion-full-body",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".discussion-actions, .discussion-circle-label, .circle-member small, .circle-member-list>p",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".circle-reply",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".circle-guidelines h2",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".circle-guidelines p, .circle-compose-entry p",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".circle-guidelines ol li",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-item-editor, .milestone-editor",
+    "retained": [
+      ".milestone-editor"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-quota, .usage-card",
+    "retained": [
+      ".usage-card"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-hero small",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-toggle",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-intention",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-maker-card",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-craft, .shared-curiosity, .yv-button",
+    "retained": [
+      ".shared-curiosity",
+      ".yv-button"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-person-actions.compact .yv-button, .connect-quick-link, .connect-maker-card .inline-notice",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-request-card>p",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-interest-preview",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".dating-attestation",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".connect-capability-controls fieldset",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".messages-layout",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".conversation-list, .conversation-panel",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".conversation-list h2",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".conversation-list>small, .conversation-panel>small",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".conversation-preview",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-list-tabs button",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-history",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-day",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-bubble",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-toolbar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-composer",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".consent-lock",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".messages-layout",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ":is(.projects-hero,.circles-hero,.connect-hero,.account-hero)",
+    "retained": [
+      ":is(.account-hero)"
+    ]
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-grid, .circle-grid",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-card, .circle-card",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".project-detail-intro, .circle-detail-intro",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".conversation-list, .conversation-panel",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-toolbar",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-toolbar .yv-button:nth-child(2)",
+    "retained": []
+  },
+  {
+    "file": "app/redesign.scss",
+    "selector": ".message-toolbar .yv-button:last-child",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".messages-layout",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-list,\n.conversation-panel",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-list h2",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-list > small,\n.conversation-panel > small",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-preview",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-header",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".project-creator",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".message-history",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".message-day",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".message-bubble",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".message-composer",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".message-toolbar",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".consent-lock",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".mobile-inbox-back",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".messages-layout",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-list",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-preview small",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".messages-layout.has-conversation > .conversation-list",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".mobile-inbox-back",
+    "retained": []
+  },
+  {
+    "file": "app/account.scss",
+    "selector": ".conversation-panel",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".connect-capability-controls",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".introduction-templates",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".expanded-interest",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".message-list-tabs",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".conversation-list-item",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".conversation-preview",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".conversation-panel,\n.message-toolbar,\n.connect-request-actions",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".message-bubble b,\n.message-bubble time",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".message-history:focus-visible",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".message-composer textarea",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".connect-capability-controls",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".conversation-list",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".message-toolbar .yv-button",
+    "retained": []
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".introduction-templates .yv-button",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".introduction-templates",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".introduction-templates legend",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "selector": ".connect-capability-controls select",
+    "retained": [],
+    "replacedBy": "app/connect.scss (capabilities/templates)"
+  },
+  {
+    "file": "app/qa.scss",
+    "selector": ".connect-intention.intent-dating .yv-badge",
+    "retained": []
+  },
+  {
+    "file": "app/qa.scss",
+    "selector": ":root[data-theme=dark] .connect-intention.intent-dating .yv-badge",
+    "retained": []
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".projects-hero",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-discovery-controls",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-search",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-filter-row,.project-form-grid",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-filter-bottom",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-section",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-grid",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-card",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-cover",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-card-meta",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-creator",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-skills",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-progress",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-star",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-card-bottom",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-detail-hero",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-detail-intro",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-detail-actions",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-mission",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-roadmap h2,.project-activity h2",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-roadmap ol",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-activity",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-collaboration",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-team-member",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-request-card",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".request-preview",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-editor",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-checkbox",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-item-editor",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-editor .field .validation-error",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": "@media (max-width:700px)",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": "@media (max-width:540px)",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/projects.scss",
+    "selector": ".project-reference",
+    "replacedBy": "UI05 projects owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circles-hero",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-grid",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-section",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-card",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-statline",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-card-actions",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-membership-control",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-join",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-detail-hero",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-detail-intro",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-detail-actions",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-purpose",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-compose-entry",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-feed-heading",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-guidelines",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-member-list",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-member",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".discussion-card",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".discussion-card-top",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".discussion-actions",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".discussion-circle-label",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".discussion-detail",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".discussion-full-body",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-reply",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-replies",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-discussion-composer",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-reference",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": ".circle-project-recommendations",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": "@media (max-width:700px)",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/circles.scss",
+    "selector": "@media (max-width:540px)",
+    "replacedBy": "UI05 circles owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-hero",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-hero-controls",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-toggle",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-quota",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-intention-grid",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-intention",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-section",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-maker-grid",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-maker-card",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-card-top",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-person-actions",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-request-card",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-interest-preview",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-history",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-safety-note",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-plan-grid",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-settings-intentions",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".dating-attestation",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-blocked-row",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": ".connect-quick-link",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": "@media (max-width:700px)",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect.scss",
+    "selector": "@media (max-width:480px)",
+    "replacedBy": "UI05 connect owner"
+  },
+  {
+    "file": "app/connect-functionality.scss",
+    "action": "Removed empty owner/import after moving live capability/template and message rules into connect.scss/messages.scss."
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".message-preview",
+    "action": "Removed confirmed unused W01 placeholder; no component references."
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".connect-intro",
+    "action": "Removed confirmed unused W01 placeholder; no component references."
+  },
+  {
+    "file": "app/globals.scss",
+    "selector": ".message-preview",
+    "action": "Removed confirmed unused W01 placeholder; no component references."
+  }
+]

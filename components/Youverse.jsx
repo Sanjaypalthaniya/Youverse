@@ -72,5 +72,17 @@ export default function Youverse({
     return <Explore />;
   }
 
-  return <AppShell route={route}>{renderPageContent()}</AppShell>;
+  const feature =
+    /^(projects|project-|circles|circle-|connect|messages|conversation)/.test(
+      route,
+    );
+  return (
+    <AppShell route={route}>
+      {feature ? (
+        <div className="feature-screen">{renderPageContent()}</div>
+      ) : (
+        renderPageContent()
+      )}
+    </AppShell>
+  );
 }

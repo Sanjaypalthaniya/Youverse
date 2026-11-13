@@ -99,8 +99,6 @@ progress::-moz-progress-bar { background: var(--primary); border-radius: 100px; 
 .rail-title h3 { font-size: 16px; letter-spacing: -.03em; }
 .suggestion { gap: 10px; margin: 20px 0; align-items: flex-start; b { font-size: 12px; } small { font-size: 11px; line-height: 1.55; } .avatar { width: 38px; height: 38px; font-size: 11px; } }
 .curiosity { font-size: 13px; margin: 15px 0; small { font-size: 11px; } }
-.circle-mini { b { font-size: 12px; } small, .member-count { font-size: 11px; } }
-.circle-symbol { border-radius: 15px; }
 
 /* C. Feed, Stories, Reels and discovery */
 .page-heading { margin-bottom: 25px; h1 { margin: 9px 0 10px; } p { font-size: 14px; max-width: 560px; } }
@@ -112,7 +110,7 @@ progress::-moz-progress-bar { background: var(--primary); border-radius: 100px; 
 .immersive-reel:after { background: linear-gradient(180deg,transparent 15%,#120c1bba 36%,#171027f5 78%); }
 .immersive-reel .reel-play, .immersive-reel .reel-caption .follow-button { background: #21172ed9; }
 .reel-browse button { font-size: 12px; }
-:is(.projects-hero,.circles-hero,.connect-hero,.account-hero) {
+:is(.account-hero) {
   background: var(--soft); border: 0; border-radius: 28px; padding: 30px 32px; margin-bottom: 26px;
   h1 { font: 800 clamp(29px,3vw,42px)/1.16 var(--font-jakarta),sans-serif; letter-spacing: -.055em; margin: 16px 0; max-width: 500px; }
   p { font-size: 14px; max-width: 450px; line-height: 1.75; }
@@ -122,59 +120,16 @@ progress::-moz-progress-bar { background: var(--primary); border-radius: 100px; 
 .choice-tabs { border: 0; gap: 5px; padding: 4px; background: var(--surface-subtle); border-radius: 16px; button { border: 0; padding: 10px 16px; font-size: 13px; border-radius: 12px; &[aria-pressed=true] { border: 0; background: var(--surface); box-shadow: 0 2px 7px #1510200d; } } }
 .interest-filters { >span { font-size: 11px; letter-spacing: .04em; } button { font-size: 12px; min-height: 40px; padding: 8px 14px; &[aria-pressed=true] { border-color: transparent; } } }
 .section-heading { h2 { font-size: 21px; } p,button,>span { font-size: 12px; } }
-.project-grid, .circle-grid { gap: 20px; }
 .composer-preview h2 { font-family: inherit; }
 
 /* D/E. Personal identity and shared creative work */
-.project-detail-hero, .circle-detail-hero { border-radius: 28px; box-shadow: var(--shadow-card); }
 .shared-curiosity { font-size: 12px; border-radius: 16px; padding: 15px; }
 .identity-chip-options button, .editable-chips>span, .identity-chip-editor .editable-chips>span { font-size: 12px; }
 .cover-choices button { font-size: 12px; }
-.project-card, .circle-card { padding: 18px; transition: box-shadow .2s, transform .2s; h3 { font-size: 22px; margin: 18px 4px 10px; letter-spacing: -.04em; } >p { font-size: 14px; margin-inline: 4px; } .project-cover { border-radius: 18px; min-height: 210px; strong { font: 800 25px/1.2 var(--font-jakarta),sans-serif; letter-spacing: -.05em; } } }
-@media(hover:hover) { :is(.project-card,.circle-card,.connect-maker-card):hover { box-shadow: var(--shadow-float); } }
-.project-cover { border-radius: 20px; strong { font: 800 clamp(25px,3vw,38px)/1.2 var(--font-jakarta),sans-serif; letter-spacing: -.05em; } small { font-size: 10px; letter-spacing: .12em; } div>span { font-size: 12px; } }
-.project-card-meta>span:last-child, .project-card-bottom>span, .project-creator, .project-creator small, .project-creator time, .project-skills, .circle-statline { font-size: 12px!important; }
-.project-progress { font-size: 12px; padding: 18px 4px; progress { height: 8px; } small { font-size: 11px; } }
-.project-star, .circle-join { font-size: 12px; border-radius: 100px; min-height: 44px; }
-.project-detail-intro, .circle-detail-intro { padding: 30px; h1 { font-size: clamp(29px,3vw,39px); letter-spacing: -.05em; } }
-.project-roadmap ol { border-color: var(--primary); h3 { font-size: 17px; } time { font-size: 12px; } }
-.project-collaboration, .circle-compose-entry { background: var(--soft); border: 0; h2 { font: 700 26px/1.3 var(--font-jakarta),sans-serif; } }
-.project-collaboration :is(p,small), .project-collaboration .needed-role p, .project-team-member small { font-size: 12px; }
-.project-activity { h3 { font-size: 18px; } p { font-size: 14px; } }
-.project-reference, .circle-reference { border: 0; border-radius: 18px; padding: 18px; span { font-size: 10px; } b { font-size: 16px; } small { font-size: 12px; } }
-.discussion-card { h3 { font-size: 21px; letter-spacing: -.035em; } p { font-size: 14px; } }
-.discussion-detail h1 { font: 700 clamp(26px,3vw,36px)/1.35 var(--font-jakarta),sans-serif; letter-spacing: -.045em; }
-.discussion-full-body { font-size: 16px; line-height: 1.9; }
-.discussion-actions, .discussion-circle-label, .circle-member small, .circle-member-list>p { font-size: 12px; }
-.circle-reply { border: 0; border-left: 3px solid var(--line); border-radius: 0 18px 18px 0; box-shadow: none; p { font-size: 14px; } }
-.circle-guidelines h2 { font: 700 25px/1.3 var(--font-jakarta),sans-serif; }
-.circle-guidelines p, .circle-compose-entry p { font-size: 14px; }
-.circle-guidelines ol li { font-size: 14px; }
-.project-item-editor, .milestone-editor { border: 0; border-radius: 18px; }
+.milestone-editor { border: 0; border-radius: 18px; }
 
 /* F. Optional connection, conversations and plans */
-.connect-quota, .usage-card { border: 0; h2 { font-size: 22px; letter-spacing: -.04em; } p { font-size: 13px; } >.yv-button { font-size: 12px; } }
-.connect-hero small { font-size: 12px; }
-.connect-toggle { font-size: 13px; border-radius: 100px; }
-.connect-intention { border-radius: 20px; min-height: 150px; >span { font: 700 20px/1.3 var(--font-jakarta),sans-serif; letter-spacing: -.025em; } small { font-size: 12px; } .yv-badge { font-size: 10px; } &[aria-pressed=true] { border-color: var(--primary); } }
-.connect-maker-card { border-radius: 24px; padding: 25px; h3 { font-size: 23px; letter-spacing: -.04em; } p { font-size: 14px; } .connect-craft, .shared-curiosity, .yv-button { font-size: 12px; } .avatar.large { width: 68px; height: 68px; font-size: 21px; } }
-.connect-person-actions.compact .yv-button, .connect-quick-link, .connect-maker-card .inline-notice { font-size: 11px; }
-.connect-request-card>p { font-size: 14px; }
-.connect-interest-preview { background: var(--soft); h2 { font: 700 26px/1.3 var(--font-jakarta),sans-serif; } }
-.dating-attestation { border-color: var(--line); p { font-size: 12px; } }
-.connect-capability-controls fieldset { border-radius: 18px; background: var(--surface-subtle); border: 0; legend { font-size: 13px; } }
-.messages-layout { grid-template-columns: 280px minmax(0,1fr); gap: 18px; }
-.conversation-list, .conversation-panel { border-radius: 24px; padding: 24px; box-shadow: var(--shadow-card); }
-.conversation-list h2 { font-size: 21px; }
-.conversation-list>small, .conversation-panel>small { font-size: 12px; }
-.conversation-preview { padding: 14px 10px; border-radius: 16px; b { font-size: 13px; } small { font-size: 11px; } .avatar { width: 40px; height: 40px; font-size: 12px; } .yv-badge { font-size: 10px; } }
-.message-list-tabs button { font-size: 12px; border: 0; border-radius: 100px; background: var(--surface-subtle); }
-.message-history { min-height: 300px; }
-.message-day { font-size: 12px; }
-.message-bubble { border-radius: 20px 20px 5px 20px; padding: 16px 18px; background: var(--soft); p { font-size: 15px; line-height: 1.7; } b,time { font-size: 11px; } }
-.message-toolbar { align-items: stretch; .yv-button { font-size: 12px; padding: 11px 14px; flex: 0 1 auto; } .yv-button:last-child { margin-left: auto; } }
-.message-composer { .field { margin-top: 18px; } textarea { font-size: 15px; } >.muted { font-size: 12px; margin-top: 15px; } }
-.consent-lock { background: var(--soft); border: 0; h2 { font-size: 21px; } p { font-size: 14px; } a { font-size: 12px; } }
+.usage-card { border: 0; h2 { font-size: 22px; letter-spacing: -.04em; } p { font-size: 13px; } >.yv-button { font-size: 12px; } }
 .pricing-grid { gap: 16px; grid-template-columns: repeat(3,minmax(0,1fr)); }
 .pricing-card { padding: 24px 20px; border-radius: 24px; box-shadow: var(--shadow-card); &.current { border: 2px solid var(--primary); background: var(--surface); padding: 23px 19px; } h2 { font-size: clamp(30px,3vw,40px); font-weight: 800; letter-spacing: -.06em; small { font-size: 12px; letter-spacing: 0; } } p { font-size: 13px; } ul li { font-size: 12px; line-height: 1.6; margin: 14px 0; } .yv-button { font-size: 12px; padding: 10px 12px; } >small { font-size: 11px; } }
 .plan-comparison { font-size: 12px; caption { font-size: 12px; } th,td { padding: 16px 10px; } }
@@ -210,7 +165,6 @@ progress::-moz-progress-bar { background: var(--primary); border-radius: 100px; 
   .pricing-grid { grid-template-columns: 1fr; }
 }
 @media(max-width:1100px) {
-  .messages-layout { grid-template-columns: 1fr; }
   .pricing-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
 }
 @media(max-width:800px) {
@@ -221,15 +175,8 @@ progress::-moz-progress-bar { background: var(--primary); border-radius: 100px; 
   .eyebrow { font-size: 10px; letter-spacing: .1em; }
   .yv-card { padding: 16px; border-radius: var(--radius-card); }
   .social-art { min-height: 285px; padding: 24px 18px; .art-paper { width: 88%; padding: 26px 20px; strong { font-size: 24px; } } }
-  :is(.projects-hero,.circles-hero,.connect-hero,.account-hero) { padding: 26px; border-radius: 24px; h1 { font-size: 32px; } p { font-size: 13px; } }
+  :is(.account-hero) { padding: 26px; border-radius: 24px; h1 { font-size: 32px; } p { font-size: 13px; } }
   .choice-tabs { button { padding: 10px 13px; font-size: 12px; } }
-  .project-grid, .circle-grid { gap: 16px; }
-  .project-card, .circle-card { padding: 17px; }
-  .project-detail-intro, .circle-detail-intro { padding: 25px; }
-  .conversation-list, .conversation-panel { padding: 22px; border-radius: 22px; }
-  .message-toolbar { flex-wrap: wrap; .yv-button { flex: 0 1 auto; } }
-  .message-toolbar .yv-button:nth-child(2) { flex: 1 1 140px; }
-  .message-toolbar .yv-button:last-child { flex: 1 1 140px; }
   .reels-stream>section { scroll-margin-top: calc(var(--shell-header) + 12px); }
   .immersive-reel { min-height: 480px; height: calc(100dvh - 220px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); .reel-caption { h2 { font-size: 26px; } p { font-size: 12px; } } }
   .notification-card { padding: 21px; }
@@ -241,3 +188,7 @@ progress::-moz-progress-bar { background: var(--primary); border-radius: 100px; 
 }
 /* At high zoom/short landscape heights, leave enough space to reach content. */
 @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior: auto!important; transition: none!important; animation: none!important; } }
+
+.circle-mini { b { font-size: 12px; } small, .member-count { font-size: 11px; } }
+
+.circle-symbol { border-radius: 15px; }

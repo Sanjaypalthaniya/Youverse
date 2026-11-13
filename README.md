@@ -138,4 +138,6 @@ See [UI02 verification and cleanup](docs/UI02_VERIFICATION.md).
 UI03 adds the compact mobile header, accessible drawer, adaptive tablet rail and
 refined desktop navigation. See [UI03 verification](docs/UI03_VERIFICATION.md).
 UI04 adds compact Explore/Search results and redesigned Living Identity profiles.
-See [UI04 verification and cleanup](docs/UI04_VERIFICATION.md). UI05 is not started.
+See [UI04 verification and cleanup](docs/UI04_VERIFICATION.md).
+UI05 adds compact Projects, Circles, Connect and Messages presentation.
+See [UI05 verification and cleanup](docs/UI05_VERIFICATION.md). UI06 is not started.

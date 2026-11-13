@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "theme": "light",
+      "status": "PASS",
+      "history": {
+        "height": 198,
+        "scrollHeight": 892,
+        "scrollTop": 694
+      },
+      "documentScroll": 0,
+      "errors": []
+    },
+    {
+      "theme": "dark",
+      "status": "PASS",
+      "history": {
+        "height": 198,
+        "scrollHeight": 892,
+        "scrollTop": 694
+      },
+      "documentScroll": 0,
+      "errors": []
+    }
+  ]
+}

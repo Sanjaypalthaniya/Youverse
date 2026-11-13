@@ -1,0 +1,72 @@
+{
+  "phase": "UI05",
+  "date": "2026-11-13",
+  "timezone": "Asia/Calcutta",
+  "baseline": "b34a76e033a22db82e0dc457e56f23519ef7ba09",
+  "lint": "PASS",
+  "tests": {
+    "passed": 73,
+    "total": 73
+  },
+  "build": {
+    "status": "PASS",
+    "staticOutputs": 62
+  },
+  "ui05": {
+    "cases": 42,
+    "engines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "widths": [
+      320,
+      360,
+      390,
+      430,
+      768,
+      1024,
+      1440
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "motionChecks": 3
+  },
+  "regressions": {
+    "workflows": 14,
+    "extended": 6,
+    "ui01": 14,
+    "ui02": 14,
+    "ui03": 14,
+    "ui04": 14,
+    "touchscreenScenarios": 2
+  },
+  "routes": 59,
+  "responsive": 200,
+  "touch": 112,
+  "reflow": 73,
+  "accessibility": {
+    "scans": {
+      "ui05": 84,
+      "route": 24,
+      "additional": 38,
+      "extended": 2,
+      "ui02": 4,
+      "ui03": 8,
+      "ui04": 10
+    },
+    "total": 170,
+    "violations": 0
+  },
+  "runtimeErrors": 0,
+  "cleanupAuditEntries": 185,
+  "screenshots": {
+    "before": 88,
+    "after": 114
+  },
+  "physicalDeviceTesting": false,
+  "domainDataAndProvidersChanged": false,
+  "nextPhaseStarted": false
+}
